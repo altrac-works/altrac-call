@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Call your legislator! :: Alabama Transgender Rights Action Coalition</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+* {
+    --white: #ffffff;
+    --trans-blue: #64C9F9;
+    --trans-pink: #F0A5B7;
+    --gray: #AAAAAA;
+
+    font-family: 'Cantarell', sans-serif;
+    color: #000000;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    font-size: 110%;
+    line-height: 1.6;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--trans-pink);
+    padding: 0.5em 1em;
+}
+
+header h1 {
+    font-size: 200%;
+}
+
+footer {
+    background-color: var(--gray);
+    padding: 0.5em 1em;
+}
+
+main {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin: 0;
+}
+
+main div {
+    flex: 1;
+    width: 100%;
+    margin: 0;
+}
+
+main div form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 1em);
+}
+
+button {
+    display: block;
+    font-size: 1.3em;
+    margin: 1em 0;
+    padding: 1em;
+    text-align: center;
+    background-color: var(--trans-blue);
+    text-decoration: none;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.link-btn {
+    display: block;
+    font-size: 1.3em;
+    margin: 1em 0;
+    padding: 1em;
+    text-align: center;
+    background-color: var(--trans-blue);
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+input {
+    font-size: 1.5em;
+}
+
+.mobile-only { display: none; }
+.not-mobile { display: block; }
+
+@media(max-width: 720px) {
+    .not-mobile { display: none; }
+    .mobile-only { display: block; }
+
+    header h1 { font-size: 1.3em; }
+}
+</style>
+    </head>
+    <body>
+        <header>
+            <h1><a href="/">ALTRAC</a> &middot; Call your legislator!</h1>
+        </header>
+        {% block body %}
+        {% endblock %}
+        <footer>
+            Questions or comments? Send us an email: <a href="mailto:info@altrac.works">info@altrac.works</a>
+        </footer>
+    </body>
+</html>

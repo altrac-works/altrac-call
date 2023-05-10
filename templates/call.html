@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block body %}
+<main>
+    <div>
+        <div class="call-form">
+            <form id="form">
+                <label for="address">Enter your address to find your legislator:</label>
+                <input type="text" id="address" autofocus autocomplete="false" />
+                <div class="mobile-only">
+                    <p>Or, if you're at your home address now, use your current location:</p>
+                    <a class="link-btn" style="margin-top: 0;" id="use-current-location" href="#">Use my current location</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+<script>
+    var autocomplete;
+
+    function initMap() {
+        var input = document.getElementById("address");
+        autocomplete = new google.maps.places.Autocomplete(input, {
+            bounds: {north: 35.1255, west: -88.3268, east: -84.5421, south: 29.93},
+            componentRestrictions: {
+                country: "US",
+            },
+            fields: ["geometry"],
+            strictBounds: false,
+        });
+
+        document.getElementById("form").addEventListener("submit", function(e) { e.preventDefault(); }, true);
+
+        google.maps.event.addListener(autocomplete, "place_changed", function() {
+            var loc = autocomplete.getPlace().geometry.location;
+            location.href = "?lat=" + loc.lat() + "&lng=" + loc.lng();
+        });
+    }
+
+    document.getElementById("use-current-location").addEventListener("click", function(e) {
+        navigator.geolocation.getCurrentPosition(function(pos) {
+            location.href = "?lat=" + pos.coords.latitude + "&lng=" + pos.coords.longitude;
+        }, function() {
+            alert("Couldn't find your current location. Please enter your address instead.");
+        });
+    });
+</script>
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkDObfecJiokuRDoU7gsB7o8Izz7uN0OQ&libraries=places&callback=initMap">
+</script>
+{% endblock %}
