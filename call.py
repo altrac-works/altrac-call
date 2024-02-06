@@ -76,7 +76,8 @@ def show_representatives(campaign):
             if "ocdid_prefix" in rep:
                 dists = [i for i in ocdids if i.startswith(rep["ocdid_prefix"])]
 
-            dists = ocdids
+            else:
+                dists = ocdids
         else:
             dists = [rep["ocdid"]]
 

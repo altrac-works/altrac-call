@@ -8,10 +8,12 @@ contact:
   reps:
     - ocdid: theirs
       ocdid_prefix: "ocd-division/country:us/state:al/sldl:"
+      no_rep_note: state House of Representatives
       rep_note: no
       prelude: Your state representative is
 
     - ocdid: theirs
       ocdid_prefix: "ocd-division/country:us/state:al/sldu:"
+      no_rep_note: state Senate
       rep_note: no
       prelude: Your state senator is
