@@ -1,41 +1,16 @@
-hb401-hb405:
-  members_file: campaign-hb401-hb405.csv
-  tips: |
-    <h2>Talking points and tips</h2>
-    <ul>
-      <li><strong>At a minimum, please call your rep, tell them you live in their district, and that you oppose HB401 and HB405.</strong></li>
-      <li>Committee chairs have great sway over whether or not these bills get to the House floor. Call them too if you have time.</li>
-      <li>Speak from personal experience if you can! If you or a loved one is trans, talk about how the bills could potentially affect you or them.</li>
-      <li>If you own a business that will be impacted by these bills (harder to find talent, etc) please speak to that.</li>
-      <li>Don't be discouraged if you reach voicemail &mdash; leave a message. Every call counts.</li>
-    </ul>
-  notes:
-    state-gov-member: |
-      <strong>Your representative is on the State Government committee, which decides whether or not HB401 ever sees the full House floor. Please urge your rep to vote no on HB401 in committee.</strong>
-
-    health-member: |
-      <strong>Your representative is on the Health committee, which decides whether or not HB405 ever sees the full House floor. Please urge your rep to vote no on HB405 in committee.</strong>
-
-    state-gov-chair: |
-      <strong>Chris Sells chairs the State Government committee, which decides whether or not HB401 ever sees the full House floor. He might have the ability to prevent HB401 from even getting a committee vote &mdash; please urge him to block this bill.</strong>
-
-    health-chair: |
-      <strong>Paul W. Lee chairs the Health committee, which decides whether or not HB405 ever sees the full House floor. He might have the ability to prevent HB405 from even getting a committee vote &mdash; please urge him to block this bill.</strong>
-
-    both-member: |
-      <strong>Your representative is a member of both the Health and the State Government committees, which decide whether these bills get a full House vote. Please urge them to vote no in committee on HB401 and HB405.</strong>
+contact:
+  name: general legislative contact
+  members_file: alabama.csv
+  tips: ""
+  notes: {}
 
   reps:
     - ocdid: theirs
-      rep_note: yes
-      prelude: Your rep is
-
-    - ocdid: ocd-division/country:us/state:al/sldl:86
+      ocdid_prefix: "ocd-division/country:us/state:al/sldl:"
       rep_note: no
-      prelude: The Health committee chair is
-      note: Paul W. Lee chairs the Health committee, which decides whether or not HB405 ever sees the full House floor. He might have the ability to block the bill from getting a committee vote. Even though he is not your representative, you can still call him and urge him to block this bill in committee.
+      prelude: Your state representative is
 
-    - ocdid: ocd-division/country:us/state:al/sldl:90
+    - ocdid: theirs
+      ocdid_prefix: "ocd-division/country:us/state:al/sldu:"
       rep_note: no
-      prelude: The State Government committee chair is
-      note: Chris Sells chairs the State Government committee, which decides whether or not HB401 ever sees the full House floor. He might have the ability to block the bill from getting a committee vote. Even though he is not your representative, you can still call him and urge him to block this bill in committee.
+      prelude: Your state senator is

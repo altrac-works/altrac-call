@@ -5,12 +5,16 @@
         {{ campaign.tips|safe }}
         <div>
             {% for rep, member, note, rep_note in result %}
+            {% if not member.name %}
+            <p>You do not have representation this legislative session (probably due to an upcoming special election). Don't forget to vote, and tell your friends about this campaign!</p>
+            {% else %}
             <h2>{{ rep.prelude }} {{ member.name }} ({{ member.party }})</h2>
             {% if note %}<p>{{ note|safe }}</p>{% endif %}
             {% if rep_note %}<p>{{ rep_note|safe }}</p>{% endif %}
             <a class="link-btn" href="tel:+1{{ member.clean_phone }}">Call {{ member.name }}<br />{{ member.phone }}</a>
             {% if not loop.last %}
             <hr />
+            {% endif %}
             {% endif %}
             {% endfor %}
         </div>
