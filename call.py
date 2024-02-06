@@ -33,6 +33,7 @@ def find_ocdids(lat, lng):
 
 @app.route("/call/")
 @app.route("/call/<c>")
+@app.route("/call/<c>/")
 def do_call(c="contact"):
     if c not in campaigns:
         abort(404)
@@ -61,7 +62,7 @@ def not_found():
     return render_template("not_found.html")
 
 
-@app.route("/call/<campaign>/")
+@app.route("/call/<campaign>/reps/")
 def show_representatives(campaign):
     campaign = campaigns[campaign]
 

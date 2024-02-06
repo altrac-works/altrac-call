@@ -17,3 +17,27 @@ contact:
       no_rep_note: state Senate
       rep_note: no
       prelude: Your state senator is
+
+sb4:
+  name: "Senate Bill 4 (flag ban)"
+  sentence_name: SB4
+  members_file: alabama.csv
+  tips: |
+    <p>SB4 bans "unapproved" flags from being displayed on most public property. This includes public parks, libraries, K-12 schools, state universities, and similar spaces. We are against this bill primarily because it restricts our right to display pride flags in public, but it's very poorly written otherwise too. Here are some talking points to use when speaking with your representatives:</p>
+
+    <ul>
+      <li>Most importantly and generally, the bill unconstitutionally limits our freedom of expression. Here are some examples of how the bill could be used.</li>
+      <li>Waterways are public property that may be affected by the bill. Flags on boats and flags required to be used by divers (to mark their diving area) would be affected by this law, and it's unclear who would be "approving" these flags.</li>
+      <li>The bill does not exclude private spaces on public property, like university dorm rooms. Should it really be illegal for a university student to display a foreign country's flag in their dorm room?</li>
+      <li>The bill does not exclude parking areas on government property. For example, it would be illegal to park a car with Gadsden flag ("don't tread on me") license plates in a city-owned parking lot unless the city in question had explicitly approved it.</li>
+    </ul>
+
+    When contacting your representatives, make sure to mention that you live in their district and oppose Senate Bill 4. You should leave a voicemail if your legislator isn't available; every call counts.
+
+  notes: {}
+  reps:
+    - ocdid: theirs
+      ocdid_prefix: "ocd-division/country:us/state:al/sldu:"
+      no_rep_note: state Senate
+      rep_note: no
+      prelude: Your state senator is
