@@ -1,5 +1,6 @@
 contact:
-  name: general legislative contact
+  name: General legislative contact
+  sentence_name: general legislative contact
   members_file: alabama.csv
   tips: ""
   notes: {}

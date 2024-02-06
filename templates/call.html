@@ -12,15 +12,17 @@
                 </div>
             </form>
         </div>
+        {% if campaigns|length > 1 %}
         <hr />
         <div>
-            <p>This is the campaign for {{ campaign.name }}. If you want to call your legislator about a different issue, click one of these buttons:</p>
-            {% for ncid, c in campaigns.items() %}
-            {% if ncid != cid %}
-            <a class="link-btn" href="{{ url_for("do_call", c=ncid) }}">{{ c.name }}</a>
-            {% endif %}
-            {% endfor %}
+                <p>This is the campaign for {{ campaign.sentence_name|default(campaign.name) }}. If you want to call your legislator about a different issue, click one of these buttons:</p>
+                {% for ncid, c in campaigns.items() %}
+                {% if ncid != cid %}
+                <a class="link-btn" href="{{ url_for("do_call", c=ncid) }}">{{ c.name }}</a>
+                {% endif %}
+                {% endfor %}
         </div>
+        {% endif %}
     </div>
 </main>
 <script>
