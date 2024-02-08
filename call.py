@@ -152,7 +152,7 @@ def show_representatives(key):
     return render_template("legislators.html", campaign=campaign, result=result)
 
 
-@app.route("/click/")
+@app.route("/call/click/")
 def click():
     query_db(
         "INSERT INTO clicks (timestamp, ip, source, tag, ocdid) VALUES (?, ?, ?, ?, ?)",
