@@ -1,29 +1,8 @@
 {% extends "base.html" %}
 {% block body %}
-<main>
-    <div>
-        {{ campaign.tips|safe }}
-        <div>
-            {% for rep, member, note, rep_note in result %}
-            {% if not member.name %}
-            <p>You do not have {{ rep.no_rep_note }} representation this legislative session (probably due to an upcoming special election). Don't forget to vote, and tell your friends about this campaign!</p>
-            {% else %}
-            <h2>{{ rep.prelude }} {{ member.name }} ({{ member.party }})</h2>
-            {% if note %}<p>{{ note|safe }}</p>{% endif %}
-            {% if rep_note %}<p>{{ rep_note|safe }}</p>{% endif %}
-            <a class="link-btn" data-ocdid="{{ member.ocdid }}" data-tag="{{ rep.click_tag|default('default') }}" onclick="handler(this);" href="tel:+1{{ member.clean_phone }}">Call {{ member.name }}<br />{{ member.phone }}</a>
-            {% endif %}
-            {% if not loop.last %}
-            <hr />
-            {% endif %}
-            {% endfor %}
-        </div>
-    </div>
-</main>
-
-<script>
-    function handler(obj) {
-        event.preventDefault(),
+<script type="text/javascript">
+    function clickHandler(obj) {
+        event.preventDefault();
 
         var ocdid = obj.getAttribute("data-ocdid");
         var click_tag = obj.getAttribute("data-tag");
@@ -41,4 +20,25 @@
         return false;
     }
 </script>
+
+<main>
+    <div>
+        {{ campaign.tips|safe }}
+        <div>
+            {% for rep, member, note, rep_note in result %}
+            {% if not member.name %}
+            <p>You do not have {{ rep.no_rep_note }} representation this legislative session (probably due to an upcoming special election). Don't forget to vote, and tell your friends about this campaign!</p>
+            {% else %}
+            <h2>{{ rep.prelude }} {{ member.name }} ({{ member.party }})</h2>
+            {% if note %}<p>{{ note|safe }}</p>{% endif %}
+            {% if rep_note %}<p>{{ rep_note|safe }}</p>{% endif %}
+            <a class="link-btn" data-ocdid="{{ member.ocdid }}" data-tag="{{ rep.click_tag|default('default') }}" onclick="clickHandler(this);" href="tel:+1{{ member.clean_phone }}">Call {{ member.name }}<br />{{ member.phone }}</a>
+            {% endif %}
+            {% if not loop.last %}
+            <hr />
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</main>
 {% endblock %}
