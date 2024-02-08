@@ -23,6 +23,8 @@
 
 <script>
     function handler(obj) {
+        event.preventDefault(),
+
         var ocdid = obj.getAttribute("data-ocdid");
         var click_tag = obj.getAttribute("data-tag");
         var req = new XMLHttpRequest();
