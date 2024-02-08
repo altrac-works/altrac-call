@@ -1,12 +1,47 @@
 import collections
 import csv
-import json
+import datetime
+import sqlite3
 
 import requests
 import yaml
-from flask import Flask, abort, redirect, render_template, request, url_for
+from flask import Flask, abort, g, redirect, render_template, request, url_for
+
+DATABASE = "database.sqlite3"
 
 app = Flask(__name__)
+
+
+# https://flask.palletsprojects.com/en/2.3.x/patterns/sqlite3/
+def get_db():
+    db = getattr(g, "_database", None)
+    if db is None:
+        db = g._database = sqlite3.connect(DATABASE)
+        db.row_factory = sqlite3.Row
+    return db
+
+
+@app.teardown_appcontext
+def close_connection(_):
+    db = getattr(g, "_database", None)
+    if db is not None:
+        db.close()
+
+
+def query_db(query, args=(), one=False):
+    cur = get_db().execute(query, args)
+    rv = cur.fetchall()
+    cur.close()
+    return (rv[0] if rv else None) if one else rv
+
+
+def init_db():
+    with app.app_context():
+        db = get_db()
+        with app.open_resource("schema.sql", mode="r") as f:
+            db.cursor().executescript(f.read())
+        db.commit()
+
 
 with open("campaigns.yml") as f:
     campaigns = yaml.safe_load(f)
@@ -39,8 +74,8 @@ def do_call(c="contact"):
         abort(404)
 
     if "lat" in request.args and "lng" in request.args:
-        lat = request.args.get("lat")
-        lng = request.args.get("lng")
+        lat = request.args["lat"]
+        lng = request.args["lng"]
 
         ocdids = find_ocdids(float(lat), float(lng))
         if not ocdids:
@@ -49,7 +84,7 @@ def do_call(c="contact"):
         return redirect(
             url_for(
                 "show_representatives",
-                campaign=c,
+                key=c,
                 ocdids=",".join(ocdids),
             )
         )
@@ -62,15 +97,28 @@ def not_found():
     return render_template("not_found.html")
 
 
-@app.route("/call/<campaign>/reps/")
-def show_representatives(campaign):
-    campaign = campaigns[campaign]
+@app.route("/call/<key>/reps/")
+def show_representatives(key):
+    campaign = campaigns[key]
 
     seen_districts = set()
     reps = campaign["reps"]
     result = []
 
-    ocdids = request.args.get("ocdids").split(",")
+    ocdids = request.args.get("ocdids", "").split(",")
+
+    query_db(
+        "INSERT INTO visits (timestamp, ip, source, campaign, ocdids) "
+        "VALUES (?, ?, ?, ?, ?)",
+        (
+            datetime.datetime.now().isoformat(),
+            request.headers.get("X-Forwarded-For", request.remote_addr),
+            request.cookies.get("src", ""),
+            key,
+            ",".join(ocdids),
+        ),
+    )
+    get_db().commit()
 
     for rep in reps:
         if rep["ocdid"] == "theirs":
@@ -104,4 +152,22 @@ def show_representatives(campaign):
     return render_template("legislators.html", campaign=campaign, result=result)
 
 
-app.run(debug=False, port=8899)
+@app.route("/click/")
+def click():
+    query_db(
+        "INSERT INTO clicks (timestamp, ip, source, tag, ocdid) VALUES (?, ?, ?, ?, ?)",
+        (
+            datetime.datetime.now().isoformat(),
+            request.headers.get("X-Forwarded-For", request.remote_addr),
+            request.cookies.get("src", ""),
+            request.args.get("tag"),
+            request.args.get("ocdid"),
+        ),
+    )
+    get_db().commit()
+
+    return "OK"
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", debug=False, port=8899)

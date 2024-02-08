@@ -8,12 +8,14 @@ contact:
   reps:
     - ocdid: theirs
       ocdid_prefix: "ocd-division/country:us/state:al/sldl:"
+      click_tag: their-sldl
       no_rep_note: state House of Representatives
       rep_note: no
       prelude: Your state representative is
 
     - ocdid: theirs
       ocdid_prefix: "ocd-division/country:us/state:al/sldu:"
+      click_tag: their-sldu
       no_rep_note: state Senate
       rep_note: no
       prelude: Your state senator is
@@ -38,6 +40,7 @@ sb4:
   reps:
     - ocdid: theirs
       ocdid_prefix: "ocd-division/country:us/state:al/sldu:"
+      click_tag: their-sldu
       no_rep_note: state Senate
       rep_note: no
       prelude: Your state senator is
@@ -82,11 +85,13 @@ hb111:
 
   reps:
     - ocdid: "ocd-division/country:us/state:al/sldl:50"
+      click_tag: chair
       rep_note: no
       prelude: The Judiciary Committee chair is
 
     - ocdid: theirs
       ocdid_prefix: "ocd-division/country:us/state:al/sldl:"
+      click_tag: their-sldl
       no_rep_note: state House
       rep_note: yes
       prelude: Your state House representative is

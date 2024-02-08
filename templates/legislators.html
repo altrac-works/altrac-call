@@ -11,13 +11,32 @@
             <h2>{{ rep.prelude }} {{ member.name }} ({{ member.party }})</h2>
             {% if note %}<p>{{ note|safe }}</p>{% endif %}
             {% if rep_note %}<p>{{ rep_note|safe }}</p>{% endif %}
-            <a class="link-btn" href="tel:+1{{ member.clean_phone }}">Call {{ member.name }}<br />{{ member.phone }}</a>
+            <a class="link-btn" data-ocdid="{{ member.ocdid }}" data-tag="{{ rep.click_tag|default('default') }}" onclick="handler(this);" href="tel:+1{{ member.clean_phone }}">Call {{ member.name }}<br />{{ member.phone }}</a>
+            {% endif %}
             {% if not loop.last %}
             <hr />
-            {% endif %}
             {% endif %}
             {% endfor %}
         </div>
     </div>
 </main>
+
+<script>
+    function handler(obj) {
+        var ocdid = obj.getAttribute("data-ocdid");
+        var click_tag = obj.getAttribute("data-tag");
+        var req = new XMLHttpRequest();
+        function done() {
+            window.open(obj.href);
+        }
+
+        req.addEventListener("load", done);
+        req.addEventListener("error", done);
+
+        req.open("/call/click/?ocdid=" + ocdid + "&tag=" + click_tag);
+        req.send();
+
+        return false;
+    }
+</script>
 {% endblock %}
