@@ -149,17 +149,20 @@ def show_representatives(key):
                 )
                 result.append((rep, member, note, rep_note))
 
-    return render_template("legislators.html", campaign=campaign, result=result)
+    return render_template(
+        "legislators.html", key=key, campaign=campaign, result=result
+    )
 
 
 @app.route("/call/click/")
 def click():
     query_db(
-        "INSERT INTO clicks (timestamp, ip, source, tag, ocdid) VALUES (?, ?, ?, ?, ?)",
+        "INSERT INTO clicks (timestamp, ip, source, campaign, tag, ocdid) VALUES (?, ?, ?, ?, ?, ?)",
         (
             datetime.datetime.now().isoformat(),
             request.headers.get("X-Forwarded-For", request.remote_addr),
             request.cookies.get("src", ""),
+            request.args.get("key"),
             request.args.get("tag"),
             request.args.get("ocdid"),
         ),

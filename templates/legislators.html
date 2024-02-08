@@ -12,7 +12,7 @@
         req.addEventListener("load", done);
         req.addEventListener("error", done);
 
-        req.open("GET", "/call/click/?ocdid=" + ocdid + "&tag=" + click_tag);
+        req.open("GET", "/call/click/?key={{ key }}&ocdid=" + ocdid + "&tag=" + click_tag);
         req.send();
 
         event.preventDefault();

@@ -10,6 +10,7 @@ CREATE TABLE clicks (
     timestamp text,
     ip text,
     source text,
+    campaign text,
     tag text,
     ocdid text
 );
