@@ -6,7 +6,7 @@
         var click_tag = obj.getAttribute("data-tag");
         var req = new XMLHttpRequest();
         function done() {
-            window.open(obj.href);
+            location.href = obj.href;
         }
 
         req.addEventListener("load", done);
