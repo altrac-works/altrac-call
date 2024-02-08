@@ -1,7 +1,7 @@
 contact:
   name: General legislative contact
   sentence_name: general legislative contact
-  members_file: alabama.csv
+  members_file: data/alabama/2024.csv
   tips: ""
   notes: {}
 
@@ -21,7 +21,7 @@ contact:
 sb4:
   name: "Senate Bill 4 (flag ban)"
   sentence_name: SB4
-  members_file: alabama.csv
+  members_file: data/alabama/2024.csv
   tips: |
     <p>SB4 bans "unapproved" flags from being displayed on most public property. This includes public parks, libraries, K-12 schools, state universities, and similar spaces. We are against this bill primarily because it restricts our right to display pride flags in public, but it's very poorly written otherwise too. Here are some talking points to use when speaking with your representatives:</p>
 
@@ -41,3 +41,52 @@ sb4:
       no_rep_note: state Senate
       rep_note: no
       prelude: Your state senator is
+
+hb111:
+  name: "House Bill 111 (What is a Woman Act)"
+  sentence_name: HB111
+  members_file: data/alabama/2024.csv
+
+  tips: |
+    <h2>Talking points and tips</h2>
+
+    <p>HB111 codifies inaccurate definitions of "male" and "female" into state law, laying the foundation for a future "bathroom bill", potentially banning gender marker changes on identification documents, and generally writing trans people out of the legal code. Here are some tips for calling legislators:</p>
+
+    <ul>
+      <li><strong>At a minimum, please call the <em>committee chair</em> and tell him that you oppose HB111, and that it shouldn't be brought up for a committee vote.</strong> If you have time, call your own representative too.</li>
+      <li>At this stage, and generally when talking to Republican legislators, it may be more effective to talk about how the bill is poorly written, has unintended consequences, and may drive business away from the state, rather than directly talking about the impacts on transgender people. See the talking points below for some ideas.</li>
+      <li>Don't be discouraged if you reach voicemail &mdash; leave a message. Every call counts.</li>
+      <li>It may be difficult, but be direct and polite. If it helps, you can write down what you want to say beforehand.</li>
+    </ul>
+
+    <strong>If you already know what the bill is about and what you want to talk about, <a href="#reps">skip these tips</a>.</strong>
+
+    <p>Here are some talking points that may be helpful:</p>
+
+    <ul>
+      <li><strong>Nobody asked for this bill.</strong> Even the sponsor of the bill, Representative DuBose, has had trouble explaining what specific event or data point caused her to introduce it. It is a bill in search of a problem, and isn't worth the House's time.</li>
+      <li><strong>It would further crowd the prison system with innocent people who dared to use a bathroom or changing room in peace.</strong> The Alabama prison system has an overcrowding problem that leads to violence and unsanitary conditions. The rate of sexual victimization for transgender inmates nationwide occurs at a rate of about 10x that of other inmates. Transgender inmates are almost universally sorted based on their sex assigned at birth, a practice which HB111 codifies. This would ensure that a vulnerable portion of the prison population continues to suffer needlessly and indefinitely.</li>
+      <li><strong>The bill is vague about what it actually applies to.</strong> If it applies to policies of state universities, how will we comply with the federal Title IX regulations? If it applies to the entirety of state law...
+          <ul>
+            <li>That includes, for example, every instance where code talks about "female breasts" &mdash; are trans women now allowed to have their bare breasts exposed in public without consequences (while cis women aren't)?</li>
+            <li>Can hair stylists in Jefferson County who only do work for women lose their exemption from barber licensing (AL Code § 45-37-40 (2022)) if they accidentally provide services to a trans woman?</li>
+            <li>If these types of things aren't the point, what part of state law is this really targeting?</li>
+          </ul>
+        </li>
+    </ul>
+
+    <a id="reps"></a>
+
+  notes:
+    judiciary-member: Your representative is a member of the Judiciary Committee, which decides if this bill gets sent to the full House floor for a vote. Please call them, in addition to the committee chair, if you are able.
+
+  reps:
+    - ocdid: "ocd-division/country:us/state:al/sldl:50"
+      rep_note: no
+      prelude: The Judiciary Committee chair is
+
+    - ocdid: theirs
+      ocdid_prefix: "ocd-division/country:us/state:al/sldl:"
+      no_rep_note: state House
+      rep_note: yes
+      prelude: Your state House representative is
