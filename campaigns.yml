@@ -95,3 +95,40 @@ hb111:
       no_rep_note: state House
       rep_note: yes
       prelude: Your state House representative is
+
+hb130:
+  name: "House Bill 130 (Don't Say Gay expansion)"
+  sentence_name: HB130
+  members_file: data/alabama/2024.csv
+  notes:
+    edpol-member: <strong>Your representative is a member of the Education Policy committee, which decides if this bill gets sent to the full House floor for a vote.</strong> You should mention this when calling, and urge them to vote no in committee.
+    edpol-chair: <strong>Your representative is the chair of the Education Policy committee, which decides if this bill gets sent to the full House floor for a vote.</strong> You should mention this when calling, and urge them to <em>not schedule the bill for a vote</em> in committee.
+
+  tips: |
+    <h2>Talking points and tips</h2>
+
+    <strong>If you already know what the bill is about and what you want to talk about, <a href="#reps">skip these tips</a>.</strong>
+
+    <p>HB130 would expand Alabama’s "Don't Say Gay" policy. It builds on existing law that prevents teachers from teaching about sexual orientation or gender identity prior to sixth grade in a way that is "not developmentally appropriate." Here are some tips for calling legislators:</p>
+
+    <ul>
+      <li><strong>At a minimum, please call your representative, tell them that you live in their district, and that you oppose HB111.</strong></li>
+      <li>At this stage, and generally when talking to Republican legislators, it may be more effective to talk about how the bill is too broad and has unintended consequences, rather than directly talking about the impacts on transgender people. (That said, if you have a personal story to share about how this bill would affect you or someone close to you, please do so.)</li>
+      <li>Don't be discouraged if you reach voicemail &mdash; leave a message. Every call counts.</li>
+      <li>It may be difficult, but be direct and polite. If it helps, you can write down what you want to say beforehand.</li>
+    </ul>
+
+    <ul>
+      <li>The bill will harm the state's sex education programs. Alabama has the fifth highest rate of teen pregnancy in the nation, and the sixth highest rate of sexually transmitted diseases. We should be acting to educate children on these topics in a developmentally appropriate way, rather than banning discussion altogether as this bill does.</li>
+      <li>HB130 is so vague that it prevents discussion about even heterosexual relationships – a female teacher who mentions her husband in the classroom would be breaking the law, if this bill were to pass. There’s no need to subject our teachers to this kind of excessive scrutiny – we should let our teachers spend their time teaching instead.</li>
+    </ul>
+
+    <a id="reps"></a>
+
+  reps:
+    - ocdid: theirs
+      ocdid_prefix: "ocd-division/country:us/state:al/sldl:"
+      click_tag: their-sldl
+      no_rep_note: state House
+      rep_note: yes
+      prelude: Your state House representative is
