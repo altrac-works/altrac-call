@@ -46,17 +46,17 @@ sb4:
       prelude: Your state senator is
 
 hb111:
-  name: "House Bill 111 (What is a Woman Act)"
-  sentence_name: HB111
+  name: "House Bill 111 and Senate Bill 92 (What is a Woman Act)"
+  sentence_name: HB111/SB92
   members_file: data/alabama/2024.csv
 
   tips: |
     <h2>Talking points and tips</h2>
 
-    <p>HB111 codifies inaccurate definitions of "male" and "female" into state law, laying the foundation for a future "bathroom bill", potentially banning gender marker changes on identification documents, and generally writing trans people out of the legal code. Here are some tips for calling legislators:</p>
+    <p>HB111 and SB92 codify inaccurate definitions of "male" and "female" into state law, laying the foundation for a future "bathroom bill", potentially banning gender marker changes on identification documents, and generally writing trans people out of the legal code. Here are some tips for calling legislators:</p>
 
     <ul>
-      <li><strong>At a minimum, please call the <em>committee chair</em> and tell him that you oppose HB111, and that it shouldn't be brought up for a committee vote.</strong> If you have time, call your own representative too.</li>
+      <li><strong>At a minimum, please call the <em>committee chairs</em> and tell him that you oppose the bill (HB111 in the House, SB92 in the Senate), and that it shouldn't be brought up for a committee vote.</strong> If you have time, call your own representatives too.</li>
       <li>At this stage, and generally when talking to Republican legislators, it may be more effective to talk about how the bill is poorly written, has unintended consequences, and may drive business away from the state, rather than directly talking about the impacts on transgender people. See the talking points below for some ideas.</li>
       <li>Don't be discouraged if you reach voicemail &mdash; leave a message. Every call counts.</li>
       <li>It may be difficult, but be direct and polite. If it helps, you can write down what you want to say beforehand.</li>
@@ -87,7 +87,12 @@ hb111:
     - ocdid: "ocd-division/country:us/state:al/sldl:50"
       click_tag: chair
       rep_note: no
-      prelude: The Judiciary Committee chair is
+      prelude: The House Judiciary Committee chair is
+
+    - ocdid: "ocd-division/country:us/state:al/sldu:32"
+      click_tag: chair-senate
+      rep_note: no
+      prelude: The Senate County and Municipal Government chair is
 
     - ocdid: theirs
       ocdid_prefix: "ocd-division/country:us/state:al/sldl:"
@@ -95,6 +100,13 @@ hb111:
       no_rep_note: state House
       rep_note: yes
       prelude: Your state House representative is
+
+    - ocdid: theirs
+      ocdid_prefix: "ocd-division/country:us/state:al/sldu:"
+      click_tag: their-sldu
+      no_rep_note: state Senate
+      rep_note: yes
+      prelude: Your state Senator is
 
 hb130:
   name: "House Bill 130 (Don't Say Gay expansion)"
