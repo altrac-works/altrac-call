@@ -139,8 +139,9 @@ def show_representatives(key):
             for member in campaign["members"][dist]:
                 rep_note = None
                 if rep["rep_note"]:
-                    if member["note"] in campaign["notes"]:
-                        rep_note = campaign["notes"][member["note"]]
+                    for note in member["note"].split("|"):
+                        if note in campaign["notes"]:
+                            rep_note = campaign["notes"][note]
 
                 note = rep.get("note")
 
