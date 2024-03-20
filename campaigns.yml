@@ -56,8 +56,8 @@ hb111:
     <p>HB111 and SB92 codify inaccurate definitions of "male" and "female" into state law, laying the foundation for a future "bathroom bill", potentially banning gender marker changes on identification documents, and generally writing trans people out of the legal code. Here are some tips for calling legislators:</p>
 
     <ul>
-      <li>Please call <strong>your reps in both the House and Senate</strong> and tell them that you oppose HB111.</li>
-      <li>At this stage, and generally when talking to Republican legislators, it may be more effective to talk about how the bill is poorly written, has unintended consequences, and may drive business away from the state, rather than directly talking about the impacts on transgender people. See the talking points below for some ideas.</li>
+      <li>Please call <strong>the Rules Committee chairs in both the House and Senate</strong> and tell them that you oppose HB111/SB92. Call your own reps too if you have time.</li>
+      <li>At this stage, and generally when talking to Republican legislators, it will be more effective to talk about how the legislature has more important priorities, and that the bill is poorly written, has unintended consequences, and may drive business away from the state &mdash; rather than directly talking about the impacts on transgender people. See the talking points below for some ideas.</li>
       <li>Don't be discouraged if you reach voicemail &mdash; leave a message. Every call counts.</li>
       <li>It may be difficult, but be direct and polite. If it helps, you can write down what you want to say beforehand.</li>
     </ul>
@@ -67,6 +67,7 @@ hb111:
     <p>Here are some talking points that may be helpful:</p>
 
     <ul>
+      <li><strong>The legislature has more important things to do.</strong> For example, we still haven't passed a budget, and there are plenty of bills in the pipeline that would benefit Alabama businesses and citizens.</li>
       <li><strong>Nobody asked for this bill.</strong> Even the sponsor of the bill, Representative DuBose, has had trouble explaining what specific event or data point caused her to introduce it. It is a bill in search of a problem, and isn't worth the House's time.</li>
       <li><strong>It would further crowd the prison system with innocent people who dared to use a bathroom or changing room in peace.</strong> The Alabama prison system has an overcrowding problem that leads to violence and unsanitary conditions. The rate of sexual victimization for transgender inmates nationwide occurs at a rate of about 10x that of other inmates. Transgender inmates are almost universally sorted based on their sex assigned at birth, a practice which HB111 codifies. This would ensure that a vulnerable portion of the prison population continues to suffer needlessly and indefinitely.</li>
       <li><strong>The bill is vague about what it actually applies to.</strong> If it applies to policies of state universities, how will we comply with the federal Title IX regulations? If it applies to the entirety of state law...
@@ -83,6 +84,14 @@ hb111:
   notes: {}
 
   reps:
+    - ocdid: ocd-division/country:us/state:al/sldl:79
+      click_tag: rules-house-chair
+      prelude: The House Rules Committee chairman is
+
+    - ocdid: ocd-division/country:us/state:al/sldu:16
+      click_tag: rules-senate-chair
+      prelude: The Senate Rules Committee chairman is
+
     - ocdid: theirs
       ocdid_prefix: "ocd-division/country:us/state:al/sldl:"
       click_tag: their-sldl
