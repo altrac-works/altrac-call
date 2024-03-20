@@ -87,10 +87,12 @@ hb111:
     - ocdid: ocd-division/country:us/state:al/sldl:79
       click_tag: rules-house-chair
       prelude: The House Rules Committee chairman is
+      rep_note: no
 
     - ocdid: ocd-division/country:us/state:al/sldu:16
       click_tag: rules-senate-chair
       prelude: The Senate Rules Committee chairman is
+      rep_note: no
 
     - ocdid: theirs
       ocdid_prefix: "ocd-division/country:us/state:al/sldl:"
