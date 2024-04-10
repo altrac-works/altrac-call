@@ -56,7 +56,7 @@ hb111:
     <p>HB111 and SB92 codify inaccurate definitions of "male" and "female" into state law, laying the foundation for a future "bathroom bill", potentially banning gender marker changes on identification documents, and generally writing trans people out of the legal code. Here are some tips for calling legislators:</p>
 
     <ul>
-      <li>Please call <strong>the Rules Committee chairs in both the House and Senate</strong> and tell them that you oppose HB111/SB92. Call your own reps too if you have time.</li>
+      <li>Please call <strong>your rep in the House, and the Rules Committee chair in the Senate</strong> and tell them that you oppose HB111/SB92. Call your own senator too, if you have time.</li>
       <li>At this stage, and generally when talking to Republican legislators, it will be more effective to talk about how the legislature has more important priorities, and that the bill is poorly written, has unintended consequences, and may drive business away from the state &mdash; rather than directly talking about the impacts on transgender people. See the talking points below for some ideas.</li>
       <li>Don't be discouraged if you reach voicemail &mdash; leave a message. Every call counts.</li>
       <li>It may be difficult, but be direct and polite. If it helps, you can write down what you want to say beforehand.</li>
@@ -84,11 +84,6 @@ hb111:
   notes: {}
 
   reps:
-    - ocdid: ocd-division/country:us/state:al/sldl:79
-      click_tag: rules-house-chair
-      prelude: The House Rules Committee chairman is
-      rep_note: no
-
     - ocdid: ocd-division/country:us/state:al/sldu:16
       click_tag: rules-senate-chair
       prelude: The Senate Rules Committee chairman is
