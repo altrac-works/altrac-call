@@ -115,3 +115,5 @@ sb79:
       no_rep_note: state Senate
       rep_note: yes
       prelude: Your state Senator is
+
+  notes: {}
