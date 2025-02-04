@@ -1,7 +1,7 @@
 contact:
   name: General legislative contact
   sentence_name: general legislative contact
-  members_file: data/alabama/2024.csv
+  members_file: data/alabama/2025.csv
   tips: ""
   notes: {}
 
@@ -20,43 +20,18 @@ contact:
       rep_note: no
       prelude: Your state senator is
 
-sb4:
-  name: "Senate Bill 4 (flag ban)"
-  sentence_name: SB4
-  members_file: data/alabama/2024.csv
-  tips: |
-    <p>SB4 bans "unapproved" flags from being displayed on most public property. This includes public parks, libraries, K-12 schools, state universities, and similar spaces. We are against this bill primarily because it restricts our right to display pride flags in public, but it's very poorly written otherwise too. Here are some talking points to use when speaking with your representatives:</p>
-
-    <ul>
-      <li>Most importantly and generally, the bill unconstitutionally limits our freedom of expression. Here are some examples of how the bill could be used.</li>
-      <li>Waterways are public property that may be affected by the bill. Flags on boats and flags required to be used by divers (to mark their diving area) would be affected by this law, and it's unclear who would be "approving" these flags.</li>
-      <li>The bill does not exclude private spaces on public property, like university dorm rooms. Should it really be illegal for a university student to display a foreign country's flag in their dorm room?</li>
-      <li>The bill does not exclude parking areas on government property. For example, it would be illegal to park a car with Gadsden flag ("don't tread on me") license plates in a city-owned parking lot unless the city in question had explicitly approved it.</li>
-    </ul>
-
-    When contacting your representatives, make sure to mention that you live in their district and oppose Senate Bill 4. You should leave a voicemail if your legislator isn't available; every call counts.
-
-  notes: {}
-  reps:
-    - ocdid: theirs
-      ocdid_prefix: "ocd-division/country:us/state:al/sldu:"
-      click_tag: their-sldu
-      no_rep_note: state Senate
-      rep_note: no
-      prelude: Your state senator is
-
-hb111:
-  name: "House Bill 111 and Senate Bill 92 (What is a Woman Act)"
-  sentence_name: HB111/SB92
-  members_file: data/alabama/2024.csv
+hb107:
+  name: "House Bill 107 (What is a Woman Act)"
+  sentence_name: HB107
+  members_file: data/alabama/2025.csv
 
   tips: |
     <h2>Talking points and tips</h2>
 
-    <p>HB111 and SB92 codify inaccurate definitions of "male" and "female" into state law, laying the foundation for a future "bathroom bill", and generally writing trans people out of the legal code. Here are some tips for calling legislators:</p>
+    <p>HB107 codify inaccurate definitions of "male" and "female" into state law, laying the foundation for a future "bathroom bill", and generally writing trans people out of the legal code. Here are some tips for calling legislators:</p>
 
     <ul>
-      <li>Please call <strong>your rep in the House, and the Rules Committee chair in the Senate</strong> and tell them that you oppose HB111/SB92. Call your own senator too, if you have time.</li>
+      <li>Please call <strong>your rep in the House</strong> and tell them that you oppose HB107. Call your own senator too, if you have time, although be mindful that the bill has not been introduced in the Senate yet.</li>
       <li>At this stage, and generally when talking to Republican legislators, it will be more effective to talk about how the legislature has more important priorities, and that the bill is poorly written, has unintended consequences, and may drive business away from the state &mdash; rather than directly talking about the impacts on transgender people. See the talking points below for some ideas.</li>
       <li>Don't be discouraged if you reach voicemail &mdash; leave a message. Every call counts.</li>
       <li>It may be difficult, but be direct and polite. If it helps, you can write down what you want to say beforehand.</li>
@@ -67,10 +42,10 @@ hb111:
     <p>Here are some talking points that may be helpful:</p>
 
     <ul>
-      <li><strong>The legislature has more important things to do.</strong> For example, we still haven't passed a budget, and there are plenty of bills in the pipeline that would benefit Alabama businesses and citizens.</li>
+      <li><strong>The legislature has more important things to do.</strong> For example, we usually don't pass a budget until the very end of the session, and there are plenty of bills that would actually benefit Alabama businesses and citizens.</li>
       <li><strong>Nobody asked for this bill.</strong> Even the sponsor of the bill, Representative DuBose, has had trouble explaining what specific event or data point caused her to introduce it. It is a bill in search of a problem, and isn't worth the House's time.</li>
       <li><strong>It would further crowd the prison system with innocent people who dared to use a bathroom or changing room in peace.</strong> The Alabama prison system has an overcrowding problem that leads to violence and unsanitary conditions. The rate of sexual victimization for transgender inmates nationwide occurs at a rate of about 10x that of other inmates. Transgender inmates are almost universally sorted based on their sex assigned at birth, a practice which HB111 codifies. This would ensure that a vulnerable portion of the prison population continues to suffer needlessly and indefinitely.</li>
-      <li><strong>The bill is vague about what it actually applies to.</strong> If it applies to policies of state universities, how will we comply with the federal Title IX regulations? If it applies to the entirety of state law...
+      <li><strong>The bill is vague about what it actually applies to</strong> and would have bizarre unintended consequences. If it applies to the entirety of state law...
           <ul>
             <li>That includes, for example, every instance where code talks about "female breasts" &mdash; are trans women now allowed to have their bare breasts exposed in public without consequences (while cis women aren't)?</li>
             <li>Can hair stylists in Jefferson County who only do work for women lose their exemption from barber licensing (AL Code § 45-37-40 (2022)) if they accidentally provide services to a trans woman?</li>
@@ -84,11 +59,6 @@ hb111:
   notes: {}
 
   reps:
-    - ocdid: ocd-division/country:us/state:al/sldu:16
-      click_tag: rules-senate-chair
-      prelude: The Senate Rules Committee chairman is
-      rep_note: no
-
     - ocdid: theirs
       ocdid_prefix: "ocd-division/country:us/state:al/sldl:"
       click_tag: their-sldl
@@ -96,43 +66,6 @@ hb111:
       rep_note: yes
       prelude: Your state House representative is
 
-    - ocdid: theirs
-      ocdid_prefix: "ocd-division/country:us/state:al/sldu:"
-      click_tag: their-sldu
-      no_rep_note: state Senate
-      rep_note: yes
-      prelude: Your state Senator is
-
-hb130:
-  name: "House Bill 130 (Don't Say Gay expansion)"
-  sentence_name: HB130
-  members_file: data/alabama/2024.csv
-  notes: {}
-
-  tips: |
-    <h2>Talking points and tips</h2>
-
-    <strong>If you already know what the bill is about and what you want to talk about, <a href="#reps">skip these tips</a>.</strong>
-
-    <p>HB130 would expand Alabama’s "Don't Say Gay" policy. It builds on existing law that prevents teachers from teaching about sexual orientation or gender identity prior to sixth grade in a way that is "not developmentally appropriate." Here are some tips for calling legislators:</p>
-
-    <ul>
-      <li><strong>At a minimum, please call your senator, tell them that you live in their district, and that you oppose HB130.</strong></li>
-      <li>At this stage, and generally when talking to Republican legislators, it may be more effective to talk about how the bill is too broad and has unintended consequences, rather than directly talking about the impacts on transgender people. (That said, if you have a personal story to share about how this bill would affect you or someone close to you, please do so.)</li>
-      <li>Don't be discouraged if you reach voicemail &mdash; leave a message. Every call counts.</li>
-      <li>It may be difficult, but be direct and polite. If it helps, you can write down what you want to say beforehand.</li>
-    </ul>
-
-    <p>Here are some talking points that may be helpful:</p>
-
-    <ul>
-      <li>The bill will harm the state's sex education programs. Alabama has the fifth highest rate of teen pregnancy in the nation, and the sixth highest rate of sexually transmitted diseases. We should be acting to educate children on these topics in a developmentally appropriate way, rather than banning discussion altogether as this bill does.</li>
-      <li>HB130 is so vague that it prevents discussion about even heterosexual relationships – a female teacher who mentions her husband in the classroom would be breaking the law, if this bill were to pass. There’s no need to subject our teachers to this kind of excessive scrutiny – we should let our teachers spend their time teaching instead.</li>
-    </ul>
-
-    <a id="reps"></a>
-
-  reps:
     - ocdid: theirs
       ocdid_prefix: "ocd-division/country:us/state:al/sldu:"
       click_tag: their-sldu
