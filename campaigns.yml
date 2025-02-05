@@ -116,4 +116,6 @@ sb79:
       rep_note: yes
       prelude: Your state Senator is
 
-  notes: {}
+  notes:
+    senate-cmg: |
+      <strong>Your Senator is on the County and Municipal Government committee, which is hearing this bill on Wednesday, February 5th.</strong> It is especially important that <em>you</em> call them and let them know how you feel about this bill.
