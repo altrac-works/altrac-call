@@ -32,6 +32,7 @@
             {% if note %}<p>{{ note|safe }}</p>{% endif %}
             {% if rep_note %}<p>{{ rep_note|safe }}</p>{% endif %}
             <a class="link-btn" data-ocdid="{{ member.ocdid }}" data-tag="{{ rep.click_tag|default('default') }}" onclick="clickHandler(this);" href="tel:+1{{ member.clean_phone }}">Call {{ member.name }}<br />{{ member.phone }}</a>
+            {% if campaign.name == "General legislative contact" and (member.office or member.email) %}<p>{% if member.office %}{{ member.name }}'s office is in Room {{ member.office }} at the state house.{% endif %} {% if member.email %}{{ member.name }}'s email is {{ member.email }}.{% endif %}</p>{% endif %}
             {% endif %}
             {% if not loop.last %}
             <hr />
