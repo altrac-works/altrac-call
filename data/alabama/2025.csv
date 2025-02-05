@@ -22,6 +22,7 @@ alison_id,ocdid,name,name_with_title,party,phone,email,office,note
 100501,ocd-division/country:us/state:al/sldl:21,Rex Reynolds,Representative Reynolds,R,256-539-5441,reynoldsdist21@gmail.com,410-D,
 100502,ocd-division/country:us/state:al/sldl:22,Ritchie Whorton,Representative Whorton,R,256-679-6490,ritchiewhorton@gmail.com,427-J,
 202313,ocd-division/country:us/state:al/sldl:23,Mike Kirkland,Representative Kirkland,R,256-218-3090,kirklandmike75@gmail.com,524-E,
+100504,ocd-division/country:us/state:al/sldl:24,Nathaniel Ledbetter,Representative Ledbetter,R,334-261-0505,nathaniel.ledbetter@alhouse.gov,519-I,
 100505,ocd-division/country:us/state:al/sldl:25,Phillip Rigsby,Representative Rigsby,R,256-714-6376,reprigsbydistrict25@gmail.com,527-B,
 202314,ocd-division/country:us/state:al/sldl:26,Brock Colvin,Representative Colvin,R,256-582-0619,bcolvin@mclo.org,525-C,
 2022434,ocd-division/country:us/state:al/sldl:27,Jeana Ross,Representative Ross,R,256-582-0619,jeana.ross@alhouse.gov,427-L,
@@ -98,6 +99,7 @@ alison_id,ocdid,name,name_with_title,party,phone,email,office,note
 100580,ocd-division/country:us/state:al/sldl:98,Napoleon Bracy,Representative Bracy,D,251-327-2794,napoleon@napoleonbracy.com,539-A,
 100581,ocd-division/country:us/state:al/sldl:99,Sam Jones,Representative Jones,D,334-261-0963,SL Jones@ballhealth.com,523-A,
 202304,ocd-division/country:us/state:al/sldl:100,Mark Shirey,Representative Shirey,R,334-261-0563,mark.shirey@alhouse.gov,527-A,
+100583,ocd-division/country:us/state:al/sldl:101,Chris Pringle,Representative Pringle,R,334-261-0489,chris.pringle@alhouse.gov,519-G,
 100584,ocd-division/country:us/state:al/sldl:102,Shane Stringer,Representative Stringer,R,251-208-5480,shane.stringer@alhouse.gov,427-G,
 100585,ocd-division/country:us/state:al/sldl:103,Barbara Drummond,Representative Drummond,D,251-208-5481,drummondbarbara@comcast.net,529,
 100586,ocd-division/country:us/state:al/sldl:104,Margie Wilcox,Representative Wilcox,R,334-261-0577,margie.wilcox@alhouse.gov,417-J,
@@ -105,36 +107,35 @@ alison_id,ocdid,name,name_with_title,party,phone,email,office,note
 100444,ocd-division/country:us/state:al/sldu:1,Tim Melson,Senator Melson,R,334-261-0888,tim.melson@alsenate.gov,726,
 100445,ocd-division/country:us/state:al/sldu:2,Tom Butler,Senator Butler,R,334-261-0884,senbutler@aol.com,730,
 100446,ocd-division/country:us/state:al/sldu:3,Arthur Orr,Senator Orr,R,256-260-2146,arthur.orr@alsenate.gov,727,
-100447,ocd-division/country:us/state:al/sldu:4,Garlan Gudger,Senator Gudger,R,334-261-0855,garlan.gudger@alsenate.gov,733,
+100447,ocd-division/country:us/state:al/sldu:4,Garlan Gudger,Senator Gudger,R,334-261-0855,garlan.gudger@alsenate.gov,733,senate-cmg
+2022435,ocd-division/country:us/state:al/sldu:5,Vacant,None Vacant,,,,,
 100449,ocd-division/country:us/state:al/sldu:6,Larry Stutts,Senator Stutts,R,334-261-0862,larry.stutts@alsenate.gov,732,
 100450,ocd-division/country:us/state:al/sldu:7,Sam Givhan,Senator Givhan,R,334-261-0867,sam.givhan@alsenate.gov,733,
+100451,ocd-division/country:us/state:al/sldu:8,Steve Livingston,Senator Livingston,R,334-261-0858,steve.livingston@alsenate.gov,731,
 202401,ocd-division/country:us/state:al/sldu:9,Wes Kitchens,Senator Kitchens,R,,wes.kitchens@alsenate.gov,737,
 100453,ocd-division/country:us/state:al/sldu:10,Andrew Jones,Senator Jones,R,334-261-0857,andrew.jones@alsenate.gov,735,
 202306,ocd-division/country:us/state:al/sldu:11,Lance Bell,Senator Bell,R,334-261-0789,lance.bell@alsenate.gov,733,
-202307,ocd-division/country:us/state:al/sldu:12,Keith Kelley,Senator Kelley,R,334-261-0846,keith.kelley@alsenate.gov,737,
+202307,ocd-division/country:us/state:al/sldu:12,Keith Kelley,Senator Kelley,R,334-261-0846,keith.kelley@alsenate.gov,737,senate-cmg
 100456,ocd-division/country:us/state:al/sldu:13,Randy Price,Senator Price,R,334-261-0874,randyprice.sd13@gmail.com,729,
 110805,ocd-division/country:us/state:al/sldu:14,April Weaver,Senator Weaver,R,334-261-0886,april.weaver@alsenate.gov,733,
 100458,ocd-division/country:us/state:al/sldu:15,Dan Roberts,Senator Roberts,R,334-261-0851,dan.roberts@alsenate.gov,729,
 100459,ocd-division/country:us/state:al/sldu:16,J. T. 'Jabo' Waggoner,Senator Waggoner,R,334-261-0892,jabo.waggoner@alsenate.gov,726,
 100460,ocd-division/country:us/state:al/sldu:17,Shay Shelnutt,Senator Shelnutt,R,334-261-0794,shay.sd17@gmail.com,731,
 100461,ocd-division/country:us/state:al/sldu:18,Rodger M. Smitherman,Senator Smitherman,D,334-261-0870,rodger.smitherman@alsenate.gov,736,
-202312,ocd-division/country:us/state:al/sldu:19,Merika Coleman,Senator Coleman,D,334-261-0793,merika.coleman@alsenate.gov,737,
-100463,ocd-division/country:us/state:al/sldu:20,Linda Coleman-Madison,Senator Coleman-Madison,D,334-261-0864,lcolemanmadison926@yahoo.com,737,
+202312,ocd-division/country:us/state:al/sldu:19,Merika Coleman,Senator Coleman,D,334-261-0793,merika.coleman@alsenate.gov,737,senate-cmg
+100463,ocd-division/country:us/state:al/sldu:20,Linda Coleman-Madison,Senator Coleman-Madison,D,334-261-0864,lcolemanmadison926@yahoo.com,737,senate-cmg
 100464,ocd-division/country:us/state:al/sldu:21,Gerald H. Allen,Senator Allen,R,334-261-0861,gerald.allen@alsenate.gov,729,
-100465,ocd-division/country:us/state:al/sldu:22,Greg Albritton,Senator Albritton,R,334-261-0843,Gregalbrittonsenate22@gmail.com,727,
+100465,ocd-division/country:us/state:al/sldu:22,Greg Albritton,Senator Albritton,R,334-261-0843,Gregalbrittonsenate22@gmail.com,727,senate-cmg
 202305,ocd-division/country:us/state:al/sldu:23,Robert Stewart,Senator Stewart,D,334-261-0860,robert.stewart@alsenate.gov,738,
+100467,ocd-division/country:us/state:al/sldu:24,Bobby D. Singleton,Senator Singleton,D,334-261-0335,bsingle362@gmail.com,740,
 100468,ocd-division/country:us/state:al/sldu:25,Will Barfoot,Senator Barfoot,R,334-261-0895,will.barfoot@alsenate.gov,730,
-108969,ocd-division/country:us/state:al/sldu:26,Kirk Hatcher,Senator Hatcher,D,334-261-9001,kirk.hatcher@alsenate.gov,738,
-202308,ocd-division/country:us/state:al/sldu:27,Jay Hovey,Senator Hovey,R,334-261-0865,jay.hovey@alsenate.gov,735,
+108969,ocd-division/country:us/state:al/sldu:26,Kirk Hatcher,Senator Hatcher,D,334-261-9001,kirk.hatcher@alsenate.gov,738,senate-cmg
+202308,ocd-division/country:us/state:al/sldu:27,Jay Hovey,Senator Hovey,R,334-261-0865,jay.hovey@alsenate.gov,735,senate-cmg
 100471,ocd-division/country:us/state:al/sldu:28,William M. Beasley,Senator Beasley,D,334-261-0868,billy.beasley@alsenate.gov,737,
 100472,ocd-division/country:us/state:al/sldu:29,Donnie Chesteen,Senator Chesteen,R,334-261-0879,donnie.chesteen@alsenate.gov,735,
-100473,ocd-division/country:us/state:al/sldu:30,Clyde Chambliss,Senator Chambliss,R,334-261-0872,clyde.chambliss@alsenate.gov,721,
-202309,ocd-division/country:us/state:al/sldu:31,Josh Carnley,Senator Carnley,R,334-261-0845,josh.carnley@alsenate.gov,735,
-100475,ocd-division/country:us/state:al/sldu:32,Chris Elliott,Senator Elliott,R,334-261-0897,chris.elliott@alsenate.gov,732,
+100473,ocd-division/country:us/state:al/sldu:30,Clyde Chambliss,Senator Chambliss,R,334-261-0872,clyde.chambliss@alsenate.gov,721,senate-cmg
+202309,ocd-division/country:us/state:al/sldu:31,Josh Carnley,Senator Carnley,R,334-261-0845,josh.carnley@alsenate.gov,735,senate-cmg
+100475,ocd-division/country:us/state:al/sldu:32,Chris Elliott,Senator Elliott,R,334-261-0897,chris.elliott@alsenate.gov,732,senate-cmg
 100476,ocd-division/country:us/state:al/sldu:33,Vivian Davis Figures,Senator Figures,D,334-261-0871,vivian.figures@alsenate.gov,736,
 100477,ocd-division/country:us/state:al/sldu:34,Jack W. Williams,Senator Williams,R,334-261-0829,jackwilliams55@icloud.com,734,
-100478,ocd-division/country:us/state:al/sldu:35,David Sessions,Senator Sessions,R,334-261-0882,d.r.sessions@att.net,734,
-,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,
-,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,
-,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,
-,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,
+100478,ocd-division/country:us/state:al/sldu:35,David Sessions,Senator Sessions,R,,,,
