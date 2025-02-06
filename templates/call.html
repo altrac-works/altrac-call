@@ -17,7 +17,7 @@
         <div>
                 <p>This is the campaign for {{ campaign.sentence_name|default(campaign.name) }}. If you want to call your legislator about a different issue, click one of these buttons:</p>
                 {% for ncid, c in campaigns.items() %}
-                {% if ncid != cid %}
+                {% if ncid != cid and not c.redirect %}
                 <a class="link-btn" href="{{ url_for("do_call", c=ncid) }}">{{ c.name }}</a>
                 {% endif %}
                 {% endfor %}

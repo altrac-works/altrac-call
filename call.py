@@ -46,6 +46,9 @@ def init_db():
 with open("campaigns.yml") as f:
     campaigns = yaml.safe_load(f)
     for key, campaign in campaigns.items():
+        if "redirect" in campaign:
+            continue
+
         with open(campaign["members_file"]) as f:
             members = list(csv.DictReader(f))
 
@@ -72,6 +75,10 @@ def find_ocdids(lat, lng):
 def do_call(c="contact"):
     if c not in campaigns:
         abort(404)
+
+    target = campaigns[c].get("redirect")
+    if target:
+        return redirect(url_for("do_call", c=target))
 
     if "lat" in request.args and "lng" in request.args:
         lat = request.args["lat"]

@@ -21,17 +21,17 @@ contact:
       prelude: Your state senator is
 
 hb107:
-  name: "House Bill 107 (What is a Woman Act)"
-  sentence_name: HB107
+  name: "House Bill 107/Senate Bill 79 (What is a Woman Act)"
+  sentence_name: HB107/SB79
   members_file: data/alabama/2025.csv
 
   tips: |
     <h2>Talking points and tips</h2>
 
-    <p>HB107 codifies inaccurate definitions of "male" and "female" into state law, laying the foundation for a future "bathroom bill", and generally writing trans people out of the legal code. Here are some tips for calling legislators:</p>
+    <p>HB107 and SB79 codify inaccurate definitions of "male" and "female" into state law, laying the foundation for a future "bathroom bill", and generally writing trans people out of the legal code. Here are some tips for calling legislators:</p>
 
     <ul>
-      <li>Please call <strong>your rep in the House</strong> and tell them that you oppose HB107. Call your own senator too, if you have time, although be mindful that the bill has not been introduced in the Senate yet.</li>
+      <li>Please call <strong>your rep in the House and your state Senator</strong> and tell them that you oppose <strong>HB107 and SB79</strong>.</li>
       <li>At this stage, and generally when talking to Republican legislators, it will be more effective to talk about how the legislature has more important priorities, and that the bill is poorly written, has unintended consequences, and may drive business away from the state &mdash; rather than directly talking about the impacts on transgender people. See the talking points below for some ideas.</li>
       <li>Don't be discouraged if you reach voicemail &mdash; leave a message. Every call counts.</li>
       <li>It may be difficult, but be direct and polite. If it helps, you can write down what you want to say beforehand.</li>
@@ -74,54 +74,4 @@ hb107:
       prelude: Your state Senator is
 
 sb79:
-  name: "Senate Bill 79 (Bathroom Ban)"
-  sentence_name: SB79
-  members_file: data/alabama/2025.csv
-
-  tips: |
-    <h2>Talking points and tips</h2>
-    <p>SB79 makes a number of changes to bathroom, changing room, and sleeping accommodation access in public facilities, including schools and prisons. Here are some tips for calling legislators:</p>
-
-    <ul>
-      <li>Please call <strong>your state senator</strong> and tell them that you oppose SB79. Call your own senator too, if you have time, although be mindful that the bill has not been introduced in the House yet.
-      <li>At this stage, and generally when talking to Republican legislators, it will be more effective to talk about how the legislature has more important priorities, and that the bill is poorly written, has unintended consequences, and may drive business away from the state — rather than directly talking about the impacts on transgender people. See the talking points below for some ideas.</li>
-      <li>Don't be discouraged if you reach voicemail — leave a message. Every call counts.</li>
-      <li>It may be difficult, but be direct and polite. If it helps, you can write down what you want to say beforehand.</li>
-    </ul>
-
-    <strong>If you already know what the bill is about and what you want to talk about, <a href="#reps">skip these tips</a>.</strong>
-
-    <p>Here are some talking points that may be helpful:</p>
-    <ul>
-      <li>It has numerous unintended consequences. The bill paints in such broad strokes that it:
-        <ul>
-        <li><strong>Bans public universities from opening overnight disaster shelters</strong> with mixed-gender sleeping areas. While there is an exemption for “render[ing] aid during a natural disaster” it only applies when the space “is not in use.”</li>
-        <li><strong>Might require universities to police dorms and prevent straight couples from entering each other’s dorm rooms.</strong></li>
-        <li>Would require universities to ban fraternity parties.</li>
-        <li>Would make it impossible to provide on-campus married couples housing.</li>
-        </ul>
-      </li>
-      <li><strong>It would ban intersex people, who were born neither male nor female, from many public spaces.</strong> Since there is no requirement for single-occupancy bathrooms in public buildings, and all multiple-occupancy bathrooms must be designated and enforced for use by either “males” or “females”, these individuals would not be able to use bathrooms in some public buildings at all. Intersex people are not disabled, and so are not protected under the Americans with Disabilities Act carve-out.</li>
-      <li><strong>It will make non-transgender people uncomfortable.</strong> The law would require non-transgender men to share changing room space with transgender women, some of whom have fully developed breasts. And it would require non-transgender women to share changing room space with transgender men, some of whom have beards and deep voices. This would be very uncomfortable for the non-transgender people involved.</li>
-      <li><strong>It places an undue burden on schools and universities.</strong> The law requires that schools and universities enforce it. But determining if someone meets the definitions of “male” and “female” in this law is near-impossible in many situations.<ul>
-        <li>Do we expect women who just don’t look feminine enough to show their birth certificates at the bathroom door? Even that is not enough, because in many states, it is easy for transgender people to obtain corrected birth certificates. Do we expect universities to perform chromosomal testing and include this information on student IDs?</li>
-        <li>How do we expect all public universities to strictly prevent women from entering their boyfriend’s dorm room?</li>
-      </ul></li>
-
-      <li><strong>It isn’t consistent with other proposed legislation.</strong> Its definition of “male” and “female” are subtly different than those proposed in HB109, Susan DuBose’s “What is a Woman Act.” And the supposedly immutable definitions of “male” and “female” are changed from the K-12 bathroom ban introduced in a previous legislative session.</li>
-
-      <li><strong>This bill will strip the authority from correctional facilities to place inmates where they deem appropriate.</strong> Transgender inmates are already–in the vast majority of cases–placed in facilities based on their birth gender. Transgender inmates are also far more likely to be the victim of sexual assault and rape than their non-transgender counterparts. SB79 would prevent even those who have undergone sex reassignment surgery from being housed based on their gender identity, putting trans inmates–especially trans women–in danger.</li>
-
-      <li><strong>It doesn’t solve any demonstrable problem.</strong> The bill’s sponsors don’t point to any issues stemming from transgender people’s inclusion in gendered spaces; however, there is evidence that transgender people are harmed by being excluded from spaces aligning with their gender identity. This bill will only serve to harm the transgender population, and will provide no benefit to the cisgender population. It is a waste of time.</li>
-
-  reps:
-    - ocdid: theirs
-      ocdid_prefix: "ocd-division/country:us/state:al/sldu:"
-      click_tag: their-sldu
-      no_rep_note: state Senate
-      rep_note: yes
-      prelude: Your state Senator is
-
-  notes:
-    senate-cmg: |
-      <strong>Your Senator is on the County and Municipal Government committee, which is hearing this bill on Wednesday, February 5th.</strong> It is especially important that <em>you</em> call them and let them know how you feel about this bill.
+  redirect: hb107
