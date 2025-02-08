@@ -20,6 +20,75 @@ contact:
       rep_note: no
       prelude: Your state senator is
 
+sb101:
+  name: "Senate Bill 101 (Age of Medical Consent)"
+  sentence_name: SB101
+  members_file: data/alabama/2025.csv
+  notes: {}
+
+  tips: |
+    <h2>Talking points and tips</h2>
+
+    <p>SB101 and SB58 requires written opt-in permission from parents for minors to receive medical care or counseling services. It is clearly meant to block youth from receiving reproductive health or gender affirming care without parental consent, but its consequences would be much farther reaching than intended. Here are some tips for calling legislators:</p>
+
+    <ul class="incremental">
+        <li>Please call <strong>your rep in the House</strong> and tell them
+            that you oppose HB107. Call your own senator too, if you have time,
+            although be mindful that the bill has not been introduced in the Senate
+            yet.</li>
+        <li>At this stage, and generally when talking to Republican legislators,
+            it will be more effective to talk about how the legislature has more
+            important priorities, and that the bill is poorly written, has
+            unintended consequences, and may drive business away from the state —
+            rather than directly talking about the impacts on transgender people.
+            See the talking points below for some ideas.</li>
+        <li>Don’t be discouraged if you reach voicemail — leave a message. Every
+            call counts.</li>
+        <li>It may be difficult, but be direct and polite. If it helps, you can
+            write down what you want to say beforehand.</li>
+    </ul>
+    <p>If you already know what the bill is about and what you want to talk
+        about, <a href="#reps">skip these tips</a>. Otherwise, <strong>skim
+            these bullet points, pick a few that resonate with you, and be prepared
+            to expand on them if necessary.</strong></p>
+    <p>Here are some talking points that may be helpful. <strong>In states with similar laws...</strong></p>
+
+    <ul>
+      <li><strong>...schools are afraid to offer first aid without permission slips.</strong>
+        <ul>
+          <li>The legislature might then blame the schools for malicious compliance. However, this bill would in fact prohibit giving even basic first aid to a child at school, much less calling an ambulance if a child broke a leg on the playground, without first contacting the child's parent.</li>
+          <li>There is an exception for life-threatening care, but not for first aid.</li>
+          <li>The default for this statute should be opt-out, rather than opt-in. Parents worried about their rights can fill out the form, and all of us who forget to fill it out don't have to rush over from work to put our bleeding kids in our cars.</li>
+        </ul>
+      </li>
+
+      <li><strong>...children in unstable living situations, such as those with absent or incarcerated parents, have difficulty getting any medical care at all.</strong><ul>
+
+        <li>Even if someone else, perhaps a grandparent, were to be appointed guardian, this would take time. In the case of serious but not immediately life threatening medical issues which yet require timely treatment, this delay could be deadly. This bill would put such children's lives at risk.</li>
+      </ul></li>
+
+      <li><strong>children of abusers are not able to meet confidentially with a medical or mental health provider.</strong><ul>
+        <li>They would first need permission from their abuser to get an appointment.</li>
+        <li>If they obtained an appointment and discussed their abuse with the provider, their abuser would have the right to see the medical records. There are legitimate reasons why children need confidentiality.</li>
+      </ul></li>
+    </ul>
+
+  reps:
+    - ocdid: theirs
+      ocdid_prefix: "ocd-division/country:us/state:al/sldl:"
+      click_tag: their-sldl
+      no_rep_note: state House of Representatives
+      rep_note: no
+      prelude: Your state representative is
+
+    - ocdid: theirs
+      ocdid_prefix: "ocd-division/country:us/state:al/sldu:"
+      click_tag: their-sldu
+      no_rep_note: state Senate
+      rep_note: no
+      prelude: Your state senator is
+
+
 hb107:
   name: "House Bill 107/Senate Bill 79 (What is a Woman Act)"
   sentence_name: HB107/SB79
