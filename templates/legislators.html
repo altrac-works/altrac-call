@@ -33,6 +33,14 @@
             {% if rep_note %}<p>{{ rep_note|safe }}</p>{% endif %}
             <a class="link-btn" data-ocdid="{{ member.ocdid }}" data-tag="{{ rep.click_tag|default('default') }}" onclick="clickHandler(this);" href="tel:+1{{ member.clean_phone }}">Call {{ member.name }}<br />{{ member.phone }}</a>
             {% if campaign.name == "General legislative contact" and (member.office or member.email) %}<p>{% if member.office %}{{ member.name }}'s office is in Room {{ member.office }} at the state house.{% endif %} {% if member.email %}{{ member.name }}'s email is {{ member.email }}.{% endif %}</p>{% endif %}
+            {% if member.phone_type %}
+                <p>
+                    {% if member.phone_type == "Direct" %}We think <strong>this is the legislator's direct number.</strong> Texting may work too. If you don't receive a response or hit a full voicemail box, try <a href="tel:+1{{ member.clean_capitol_phone }}">{{ member.capitol_phone }} (their State House office phone number)</a>.
+                    {% elif member.phone_type == "Business" %}We think <strong>this is a phone number of the legislator's business</strong>. You may have to dial an extension or ask someone to transfer you. You can also try <a href="tel:+1{{ member.clean_capitol_phone }}">{{ member.capitol_phone }} (their State House office phone number)</a>.
+                    {% elif member.phone_type == "LegeOffice" %}We think <strong>this is a county legislative office phone number</strong>. You will likely reach someone who is not the representative, but who will be able to take messages for them. You can also try <a href="tel:+1{{ member.clean_capitol_phone }}">{{ member.capitol_phone }} (their State House office phone number)</a>.
+                    {% endif %}
+                </p>
+            {% endif %}
             {% endif %}
             {% if not loop.last %}
             <hr />

@@ -153,7 +153,10 @@ def show_representatives(key):
                 note = rep.get("note")
 
                 member["clean_phone"] = "".join(
-                    x for x in member["phone"] if x.isnumeric()
+                    x for x in member["phone"].split()[0] if x.isnumeric()
+                )
+                member["clean_capitol_phone"] = "".join(
+                    x for x in member["capitol_phone"].split()[0] if x.isnumeric()
                 )
                 result.append((rep, member, note, rep_note))
 
