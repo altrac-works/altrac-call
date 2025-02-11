@@ -99,9 +99,7 @@ hb107:
 
     <ul class="incremental">
         <li>Please call <strong>your rep in the House</strong> and tell them
-            that you oppose HB107. Call your own senator too, if you have time,
-            although be mindful that the bill has not been introduced in the Senate
-            yet.</li>
+            that you oppose HB107.</li>
         <li>At this stage, and generally when talking to Republican legislators,
             it will be more effective to talk about how the legislature has more
             important priorities, and that the bill is poorly written, has
@@ -257,6 +255,123 @@ hb107:
       no_rep_note: state House
       rep_note: yes
       prelude: Your state House representative is
+
+hb67:
+  name: "House Bill 67 (Drag ban + trans kids at sleepaway camps)"
+  sentence_name: HB67
+  members_file: data/alabama/2025.csv
+
+  tips: |
+    <h2>Talking points and tips</h2>
+
+    <p><strong>House Bill 67</strong> could punish innocent transgender Alabamians simply for being present at schools or libraries. The bill’s main goal is to ban drag performances, but it is written such that transgender people would also be impacted. It also bans transgender youth from sleepaway camps.</p>
+
+    <ul class="incremental">
+        <li>Please call <strong>your rep in the House</strong> and tell them
+            that you oppose HB67. Call your own senator too, if you have time,
+            although be mindful that the bill has not been introduced in the Senate
+            yet.</li>
+        <li>At this stage, and generally when talking to Republican legislators,
+            it will be more effective to talk about how the legislature has more
+            important priorities, and that the bill is poorly written, has
+            unintended consequences, and may drive business away from the state —
+            rather than directly talking about the impacts on transgender people.
+            See the talking points below for some ideas.</li>
+        <li>Don’t be discouraged if you reach voicemail — leave a message. Every
+            call counts.</li>
+        <li>It may be difficult, but be direct and polite. If it helps, you can
+            write down what you want to say beforehand.</li>
+    </ul>
+    <p>If you already know what the bill is about and what you want to talk
+        about, <a href="#reps">skip these tips</a>. Otherwise, <strong>skim
+            these bullet points, pick a few that resonate with you, and be prepared
+            to expand on them if necessary.</strong></p>
+    <p>Here are some talking points that may be helpful:</p>
+    <ul>
+      <li><strong>HB67 violates the single-subject rule laid out in the
+      Alabama Constitution by containing two completely distinct
+      parts.</strong>
+      <ul>
+      <li>The first part bans “drag” in libraries and schools, and the second
+      part bans trans kids from sleepaway camps. <strong>These are not
+      sufficiently related to pass a single-subject test.</strong><br />
+      </li>
+      </ul></li>
+      <li><strong>The bill’s sponsor says the goal of this bill is banning
+      “drag performances” in schools and public libraries, but it’s worded so
+      vaguely that it would have far-reaching consequences.</strong><br />
+      </li>
+      <li><strong>The definition of what drag looks like is immensely broad
+      and vague.</strong>
+      <ul>
+      <li>It encompasses anything that a bad actor would want it to
+      mean.<br />
+      </li>
+      <li>Under this definition, if someone doesn’t conform to another
+      person’s taste in clothing, they could argue that that person is in
+      violation of this law.
+      <ul>
+      <li>In extremely bad-faith cases, men wearing kilts and women wearing
+      pants could qualify as “drag.” This is clearly not the intention of the
+      bill.<br />
+      </li>
+      </ul></li>
+      </ul></li>
+      <li>Drag is defined as a “performance,” but it never specifies what
+      qualifies as a performance.<br />
+      </li>
+      <li>The way it’s written, <strong>girls couldn’t play male roles in high
+      school theater where there are usually not usually not enough boys to
+      fill the male roles.</strong>
+      <ul>
+      <li>Classic plays and musicals where cross dressing is part of the plot
+      would no longer be performable.<br />
+      </li>
+      <li>It would also prohibit a girl from dressing up as George Washington
+      for a classroom presentation.<br />
+      </li>
+      </ul></li>
+      <li>Teachers and students shouldn’t have to be paranoid that they’re
+      breaking whatever law the Alabama state legislature drums up —
+      <strong>they should instead be able to enjoy the freedom of speech and
+      expression that’s guaranteed to them in the US
+      Constitution.</strong><br />
+      </li>
+      <li>Do we really need state officials policing how people dress in
+      public libraries?
+      <ul>
+      <li>Can women wear pants or suits without being accused of “performing”
+      masculine “gender identity”?<br />
+      </li>
+      <li>This is a slippery slope of our elected officials pushing a personal
+      agenda without any bases and restricting freedom of speech and
+      expression.<br />
+      </li>
+      </ul></li>
+      <li>Would leave school boards and the state open to lawsuits, which
+      would cost taxpayers.<br />
+      </li>
+      <li>This is another bill in search of a problem. It is only there to
+      further alienate anyone who looks different without any basis to do
+      so.</li>
+    </ul>
+
+  notes: {}
+
+  reps:
+    - ocdid: theirs
+      ocdid_prefix: "ocd-division/country:us/state:al/sldl:"
+      click_tag: their-sldl
+      no_rep_note: state House
+      rep_note: yes
+      prelude: Your state House representative is
+
+    - ocdid: theirs
+      ocdid_prefix: "ocd-division/country:us/state:al/sldu:"
+      click_tag: their-sldu
+      no_rep_note: state Senate
+      rep_note: no
+      prelude: Your state senator is
 
 sb79:
   redirect: hb107
