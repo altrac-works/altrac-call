@@ -55,9 +55,7 @@
             <p>You can write a physical letter to your legislator at:</p><p><strong>{{ member.name }}</strong><br />Alabama State House<br />11 S Union St<br />Montgomery, AL 36130</p>
             {% endif %}
 
-            {% if not loop.last %}
             <hr />
-            {% endif %}
             {% endfor %}
         </div>
         <p><em>Not your legislators? <a href="https://altrac.works/call/{{ key }}/">Enter your address again.</a></p>
