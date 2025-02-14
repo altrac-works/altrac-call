@@ -78,6 +78,9 @@ def do_call(c="contact"):
 
     target = campaigns[c].get("redirect")
     if target:
+        if isinstance(target, dict) and "web" in target:
+            return redirect(target["web"])
+
         return redirect(url_for("do_call", c=target))
 
     if "lat" in request.args and "lng" in request.args:
