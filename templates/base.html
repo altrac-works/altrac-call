@@ -100,15 +100,31 @@ input {
 
     header h1 { font-size: 1.3em; }
 }
+
+@media screen {
+    .only-print { display: none; }
+}
+
+@media print {
+    .hide-print { display: none; }
+    #header { display: flex; align-items: center; justify-content: space-between; }
+    body { font-size: 0.7em; margin: 3em; }
+    #qrcode img { height: 1in; }
+}
+
+@page {
+    size: auto;
+    margin: 0mm;
+}
 </style>
     </head>
     <body>
-        <header>
+        <header class="hide-print">
             <h1><a href="/">ALTRAC</a> &middot; Call your legislator!</h1>
         </header>
         {% block body %}
         {% endblock %}
-        <footer>
+        <footer class="hide-print">
             Questions or comments? Send us an email: <a href="mailto:info@altrac.works">info@altrac.works</a>
         </footer>
         <script src="/js/analyticsomatic9000.js"></script>

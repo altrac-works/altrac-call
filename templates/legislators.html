@@ -22,8 +22,12 @@
 
 <main>
     <div>
+        <div class="only-print" id="header">
+            <h1>{{ campaign.name }}</h1>
+            <div id="qrcode" style="flex: 0;"></div>
+        </div>
         {{ campaign.tips|safe }}
-        <div>
+        <div class="hide-print">
             {% for rep, member, note, rep_note in result %}
             {% if not member.name or member.name == "Vacant" %}
             <p>You do not have {{ rep.no_rep_note }} representation this legislative session (probably due to an upcoming special election). Don't forget to vote, and tell your friends about this campaign!</p>
@@ -54,5 +58,7 @@
             {% endfor %}
         </div>
     </div>
+    <script src="https://altrac.works/files/qrcode.min.js"></script>
+    <script>new QRCode(document.getElementById("qrcode"), "https://altrac.works/call/{{ key }}/");</script>
 </main>
 {% endblock %}
