@@ -25,14 +25,14 @@
         {{ campaign.tips|safe }}
         <div>
             {% for rep, member, note, rep_note in result %}
-            {% if not member.name %}
+            {% if not member.name or member.name == "Vacant" %}
             <p>You do not have {{ rep.no_rep_note }} representation this legislative session (probably due to an upcoming special election). Don't forget to vote, and tell your friends about this campaign!</p>
             {% else %}
             <h2>{{ rep.prelude }} {{ member.name }} ({{ member.party }})</h2>
             {% if note %}<p>{{ note|safe }}</p>{% endif %}
             {% if rep_note %}<p>{{ rep_note|safe }}</p>{% endif %}
             <a class="link-btn" data-ocdid="{{ member.ocdid }}" data-tag="{{ rep.click_tag|default('default') }}" onclick="clickHandler(this);" href="tel:+1{{ member.clean_phone }}">Call {{ member.name }}<br />{{ member.phone }}</a>
-            {% if campaign.name == "General legislative contact" and (member.office or member.email) %}<p>{% if member.office %}{{ member.name }}'s office is in Room {{ member.office }} at the state house.{% endif %} {% if member.email %}{{ member.name }}'s email is {{ member.email }}.{% endif %}</p>{% endif %}
+
             {% if member.phone_type %}
                 <p>
                     {% if member.phone_type == "Direct" %}We think <strong>this is the legislator's direct number.</strong> Texting may work too. If you don't receive a response or hit a full voicemail box, try <a href="tel:+1{{ member.clean_capitol_phone }}">{{ member.capitol_phone }} (their State House office phone number)</a>.
@@ -41,7 +41,13 @@
                     {% endif %}
                 </p>
             {% endif %}
+
+            {% if member.office or member.email %}
+            <p>{% if member.office %}{{ member.name }}'s office is in Room {{ member.office }} at the state house.{% endif %} {% if member.email %}{{ member.name }}'s email is {{ member.email }}.{% endif %}</p>
             {% endif %}
+            <p>You can write a physical letter to your legislator at:</p><p><strong>{{ member.name }}</strong><br />Alabama State House<br />11 S Union St<br />Montgomery, AL 36130</p>
+            {% endif %}
+
             {% if not loop.last %}
             <hr />
             {% endif %}
