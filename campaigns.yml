@@ -21,19 +21,19 @@ contact:
       prelude: Your state senator is
 
 sb101:
-  name: "Senate Bill 101 (Age of Medical Consent)"
-  sentence_name: SB101
+  name: "Senate Bill 101/House Bill 267 (Age of Medical Consent)"
+  sentence_name: SB101/HB267
   members_file: data/alabama/2025.csv
   notes: {}
 
   tips: |
     <h2>Talking points and tips</h2>
 
-    <p>SB101 and SB58 requires written opt-in permission from parents for minors to receive medical care or counseling services. They are clearly meant to block youth from receiving reproductive health or gender affirming care without parental consent, but its consequences would be much farther reaching than intended. Here are some tips for calling legislators:</p>
+    <p>SB101, SB58, and HB267 require written opt-in permission from parents for minors to receive medical care or counseling services. They are clearly meant to block youth from receiving reproductive health or gender affirming care without parental consent, but its consequences would be much farther reaching than intended. Here are some tips for calling legislators:</p>
 
     <ul class="incremental">
         <li>Please call <strong>your state Senator</strong> and tell them
-            that you oppose Senate Bill 101 and Senate Bill 58. Call your own House rep too, if you have time.</li>
+            that you oppose Senate Bill 101 and Senate Bill 58. And call <strong>your House rep</strong> and tell them that you oppose House Bill 267.</li>
         <li>At this stage, and generally when talking to Republican legislators,
             it will be more effective to talk about how the legislature has more
             important priorities, and that the bill is poorly written, has
