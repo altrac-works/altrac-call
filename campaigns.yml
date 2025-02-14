@@ -46,7 +46,7 @@ sb101:
             write down what you want to say beforehand.</li>
     </ul>
     <p>If you already know what the bill is about and what you want to talk
-        about, <a href="#reps">skip these tips</a>. Otherwise, <strong>skim
+        about, <a id="reps">skip these tips</a>. Otherwise, <strong>skim
             these bullet points, pick a few that resonate with you, and be prepared
             to expand on them if necessary.</strong></p>
     <p>Here are some talking points that may be helpful. <strong>In states with similar laws...</strong></p>
@@ -71,7 +71,7 @@ sb101:
       </ul></li>
     </ul>
 
-    <a href="#reps"></a>
+    <a id="reps"></a>
 
   reps:
     - ocdid: theirs
@@ -363,7 +363,7 @@ hb4:
     as political backlash?</li>
     </ul>
 
-    <a href="#reps"></a>
+    <a id="reps"></a>
 
   notes: {}
 
