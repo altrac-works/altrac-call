@@ -58,7 +58,7 @@
             <hr />
             {% endfor %}
         </div>
-        <p><em>Not your legislators? <a href="https://altrac.works/call/{{ key }}/">Enter your address again.</a></p>
+        <p class="hide-print"><em>Not your legislators? <a href="https://altrac.works/call/{{ key }}/">Enter your address again.</a></p>
     </div>
     <script src="https://altrac.works/files/qrcode.min.js"></script>
     <script>new QRCode(document.getElementById("qrcode"), "https://altrac.works/call/{{ key }}/");</script>
