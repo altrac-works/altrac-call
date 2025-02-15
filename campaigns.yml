@@ -212,7 +212,7 @@ hb67:
       prelude: Your state senator is
 
 hb4:
-  name: "House Bill 4 (\"Gender-Oriented Conduct\")"
+  name: "House Bill 4 (Jail Librarians / \"Gender-Oriented Conduct\")"
   sentence_name: HB4
   members_file: data/alabama/2025.csv
 
