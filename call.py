@@ -5,7 +5,16 @@ import sqlite3
 
 import requests
 import yaml
-from flask import Flask, abort, g, redirect, render_template, request, url_for
+from flask import (
+    Flask,
+    abort,
+    g,
+    make_response,
+    redirect,
+    render_template,
+    request,
+    url_for,
+)
 
 DATABASE = "database.sqlite3"
 
@@ -99,6 +108,10 @@ def do_call(c="contact"):
             )
         )
 
+    saved_ocdids = request.cookies.get("ocdids")
+    if saved_ocdids and "relocate" not in request.args:
+        return redirect(url_for("show_representatives", key=c, ocdids=saved_ocdids))
+
     return render_template("call.html", campaign=campaigns[c], campaigns=campaigns)
 
 
@@ -166,9 +179,13 @@ def show_representatives(key):
                     )
                 result.append((rep, member, note, rep_note))
 
-    return render_template(
-        "legislators.html", key=key, campaign=campaign, result=result
+    resp = make_response(
+        render_template("legislators.html", key=key, campaign=campaign, result=result)
     )
+
+    resp.set_cookie("ocdids", ",".join(ocdids), max_age=86400)
+
+    return resp
 
 
 @app.route("/call/click/")
