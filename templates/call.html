@@ -17,7 +17,7 @@
 <script>
     var autocomplete;
 
-    var extraArgs = "{% if theme_kiosk %}&embed=1{% endif %}{% if theme_accent_color %}&accent={{ theme_accent_color }}{% endif %}";
+    var extraArgs = "{% if theme_embed %}&embed=1{% endif %}{% if theme_accent_color %}&accent={{ theme_accent_color }}{% endif %}";
 
     function initMap() {
         var input = document.getElementById("address");

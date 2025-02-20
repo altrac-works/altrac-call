@@ -43,7 +43,7 @@ def inject_theme():
     result = {}
 
     if "embed" in request.args:
-        result["theme_kiosk"] = True
+        result["theme_embed"] = True
 
     if request.args.get("accent"):
         result["theme_accent_color"] = request.args["accent"]
@@ -99,20 +99,20 @@ def do_call(c="contact"):
     if c not in campaigns:
         abort(404)
 
-    kiosk_args = {}
+    embed_args = {}
     if "embed" in request.args:
-        kiosk_args["embed"] = "1"
+        embed_args["embed"] = "1"
     if "accent" in request.args:
-        kiosk_args["accent"] = request.args["accent"]
+        embed_args["accent"] = request.args["accent"]
 
-    print("kiosk args", kiosk_args)
+    print("embed args", embed_args)
 
     target = campaigns[c].get("redirect")
     if target:
         if isinstance(target, dict) and "web" in target:
             return redirect(target["web"])
 
-        return redirect(url_for("do_call", c=target, **kiosk_args))
+        return redirect(url_for("do_call", c=target, **embed_args))
 
     if "lat" in request.args and "lng" in request.args:
         lat = request.args["lat"]
@@ -127,18 +127,18 @@ def do_call(c="contact"):
                 "show_representatives",
                 key=c,
                 ocdids=",".join(ocdids),
-                **kiosk_args,
+                **embed_args,
             )
         )
 
     saved_ocdids = request.cookies.get("ocdids")
     if saved_ocdids and "relocate" not in request.args and "embed" not in request.args:
         return redirect(
-            url_for("show_representatives", key=c, ocdids=saved_ocdids, **kiosk_args)
+            url_for("show_representatives", key=c, ocdids=saved_ocdids, **embed_args)
         )
 
     return render_template(
-        "call.html", campaign=campaigns[c], campaigns=campaigns, **kiosk_args
+        "call.html", campaign=campaigns[c], campaigns=campaigns, **embed_args
     )
 
 

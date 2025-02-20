@@ -26,7 +26,7 @@
             <h1>{{ campaign.name }}</h1>
             <div id="qrcode" style="flex: 0;"></div>
         </div>
-        {% if not (theme_kiosk|default(False)) %}
+        {% if not (theme_embed|default(False)) %}
         <div class="hide-print">
             <p><em><strong>Tip:</strong> Print this page for an in-person letter writing party! You'll get our talking points, plus a QR code for folks to scan to find their reps.</em></p>
         </div>
