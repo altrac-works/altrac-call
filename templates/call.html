@@ -12,21 +12,12 @@
                 </div>
             </form>
         </div>
-        {% if campaigns|length > 1 %}
-        <hr />
-        <div>
-                <p>This is the campaign for {{ campaign.sentence_name|default(campaign.name) }}. If you want to call your legislator about a different issue, click one of these buttons:</p>
-                {% for ncid, c in campaigns.items() %}
-                {% if ncid != cid and not c.redirect %}
-                <a class="link-btn" href="{{ url_for("do_call", c=ncid) }}">{{ c.name }}</a>
-                {% endif %}
-                {% endfor %}
-        </div>
-        {% endif %}
     </div>
 </main>
 <script>
     var autocomplete;
+
+    var extraArgs = "{% if theme_kiosk %}&embed=1{% endif %}{% if theme_accent_color %}&accent={{ theme_accent_color }}{% endif %}";
 
     function initMap() {
         var input = document.getElementById("address");
@@ -43,13 +34,13 @@
 
         google.maps.event.addListener(autocomplete, "place_changed", function() {
             var loc = autocomplete.getPlace().geometry.location;
-            location.href = "?lat=" + loc.lat() + "&lng=" + loc.lng();
+            location.href = "?lat=" + loc.lat() + "&lng=" + loc.lng() + extraArgs;
         });
     }
 
     document.getElementById("use-current-location").addEventListener("click", function(e) {
         navigator.geolocation.getCurrentPosition(function(pos) {
-            location.href = "?lat=" + pos.coords.latitude + "&lng=" + pos.coords.longitude;
+            location.href = "?lat=" + pos.coords.latitude + "&lng=" + pos.coords.longitude + extraArgs;
         }, function() {
             alert("Couldn't find your current location. Please enter your address instead.");
         });

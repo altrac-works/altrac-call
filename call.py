@@ -1,6 +1,7 @@
 import collections
 import csv
 import datetime
+import os
 import sqlite3
 
 import requests
@@ -35,6 +36,19 @@ def close_connection(_):
     db = getattr(g, "_database", None)
     if db is not None:
         db.close()
+
+
+@app.context_processor
+def inject_theme():
+    result = {}
+
+    if "embed" in request.args:
+        result["theme_kiosk"] = True
+
+    if request.args.get("accent"):
+        result["theme_accent_color"] = request.args["accent"]
+
+    return result
 
 
 def query_db(query, args=(), one=False):
@@ -85,12 +99,20 @@ def do_call(c="contact"):
     if c not in campaigns:
         abort(404)
 
+    kiosk_args = {}
+    if "embed" in request.args:
+        kiosk_args["embed"] = "1"
+    if "accent" in request.args:
+        kiosk_args["accent"] = request.args["accent"]
+
+    print("kiosk args", kiosk_args)
+
     target = campaigns[c].get("redirect")
     if target:
         if isinstance(target, dict) and "web" in target:
             return redirect(target["web"])
 
-        return redirect(url_for("do_call", c=target))
+        return redirect(url_for("do_call", c=target, **kiosk_args))
 
     if "lat" in request.args and "lng" in request.args:
         lat = request.args["lat"]
@@ -105,14 +127,19 @@ def do_call(c="contact"):
                 "show_representatives",
                 key=c,
                 ocdids=",".join(ocdids),
+                **kiosk_args,
             )
         )
 
     saved_ocdids = request.cookies.get("ocdids")
-    if saved_ocdids and "relocate" not in request.args:
-        return redirect(url_for("show_representatives", key=c, ocdids=saved_ocdids))
+    if saved_ocdids and "relocate" not in request.args and "embed" not in request.args:
+        return redirect(
+            url_for("show_representatives", key=c, ocdids=saved_ocdids, **kiosk_args)
+        )
 
-    return render_template("call.html", campaign=campaigns[c], campaigns=campaigns)
+    return render_template(
+        "call.html", campaign=campaigns[c], campaigns=campaigns, **kiosk_args
+    )
 
 
 @app.route("/call/not_found/")
@@ -207,4 +234,4 @@ def click():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", debug=False, port=8899)
+    app.run(host="0.0.0.0", debug=True if os.getenv("DEBUG") else False, port=8899)

@@ -6,8 +6,8 @@
 <style>
 * {
     --white: #ffffff;
-    --trans-blue: #64C9F9;
-    --trans-pink: #F0A5B7;
+    --trans-blue: {{ theme_accent_color|default('#64C9F9') }};
+    --trans-pink: {{ theme_header_color|default('#F0A5B7') }};
     --gray: #AAAAAA;
 
     font-family: 'Cantarell', sans-serif;
@@ -119,14 +119,27 @@ input {
 </style>
     </head>
     <body>
+        {% if not (theme_kiosk|default(False)) %}
         <header class="hide-print">
             <h1><a href="/">ALTRAC</a> &middot; Call your legislator!</h1>
         </header>
+        {% endif %}
         {% block body %}
         {% endblock %}
+
+        {% if theme_kiosk|default(False) %}
+        <footer class="hide-print">
+            <a href="https://altrac.works" style="text-decoration: none; display: inline-flex; align-items: center;">
+                <img src="https://altrac.works/img/logoCv2.svg" style="height: 2.5em;" />
+                <span style="padding-bottom: 0.03em;">Tools by <span style="text-decoration: underline;">ALTRAC</span></span>
+            </a>
+        </footer>
+        {% else %}
         <footer class="hide-print">
             Questions or comments? Send us an email: <a href="mailto:info@altrac.works">info@altrac.works</a>
         </footer>
+        {% endif %}
+
         <script src="/js/analyticsomatic9000.js"></script>
     </body>
 </html>
