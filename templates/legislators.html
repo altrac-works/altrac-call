@@ -6,11 +6,7 @@
         var click_tag = obj.getAttribute("data-tag");
         var req = new XMLHttpRequest();
         function done() {
-            {% if theme_embed|default(False) %}
             window.open(obj.href);
-            {% else %}
-            location.href = obj.href;
-            {% endif %}
         }
 
         req.addEventListener("load", done);
@@ -19,8 +15,12 @@
         req.open("GET", "/call/click/?key={{ key }}&ocdid=" + ocdid + "&tag=" + click_tag);
         req.send();
 
+        {% if not (theme_embed|default(False)) %}
         event.preventDefault();
         return false;
+        {% else %}
+        return true;
+        {% endif %}
     }
 </script>
 
