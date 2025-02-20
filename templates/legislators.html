@@ -40,7 +40,7 @@
             <h2>{{ rep.prelude }} {{ member.name }} ({{ member.party }})</h2>
             {% if note %}<p>{{ note|safe }}</p>{% endif %}
             {% if rep_note %}<p>{{ rep_note|safe }}</p>{% endif %}
-            <a {% if theme_embed|default(False) %}target="_top" {% endif %}class="link-btn" data-ocdid="{{ member.ocdid }}" data-tag="{{ rep.click_tag|default('default') }}" onclick="clickHandler(this);" href="tel:+1{{ member.clean_phone }}">Call {{ member.name }}<br />{{ member.phone }}</a>
+            <a {% if theme_embed|default(False) %}target="_blank" {% endif %}class="link-btn" data-ocdid="{{ member.ocdid }}" data-tag="{{ rep.click_tag|default('default') }}" onclick="clickHandler(this);" href="tel:+1{{ member.clean_phone }}">Call {{ member.name }}<br />{{ member.phone }}</a>
 
             {% if member.phone_type %}
                 <p>
