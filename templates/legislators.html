@@ -6,7 +6,7 @@
         var click_tag = obj.getAttribute("data-tag");
         var req = new XMLHttpRequest();
         function done() {
-            {% if theme_embed|default(False %}
+            {% if theme_embed|default(False) %}
             window.open(obj.href);
             {% else %}
             location.href = obj.href;
