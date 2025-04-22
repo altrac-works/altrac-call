@@ -389,13 +389,6 @@ hb244:
   notes: {}
   reps:
     - ocdid: theirs
-      ocdid_prefix: "ocd-division/country:us/state:al/sldl:"
-      click_tag: their-sldl
-      no_rep_note: state House
-      rep_note: yes
-      prelude: Your state House representative is
-
-    - ocdid: theirs
       ocdid_prefix: "ocd-division/country:us/state:al/sldu:"
       click_tag: their-sldu
       no_rep_note: state Senate
@@ -411,10 +404,8 @@ hb244:
     a <em>legal requirement</em> with which school employees must
     comply.</p>
     <ul>
-    <li>Please call <strong>your rep in the House</strong> and tell them
-    that you oppose HB244. Call your own senator too, if you have time,
-    although be mindful that the bill has not been introduced in the Senate
-    yet.<br />
+    <li>Please call <strong>your state senator</strong> and tell them
+    that you oppose HB244.<br />
     </li>
     <li>At this stage, and generally when talking to Republican legislators,
     it will be more effective to talk about how the legislature has more
