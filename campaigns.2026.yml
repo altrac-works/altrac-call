@@ -1,0 +1,142 @@
+contact:
+  name: General legislative contact
+  sentence_name: general legislative contact
+  members_file: data/alabama/2026.csv
+  tips: ""
+  notes: {}
+
+  reps:
+    - ocdid: theirs
+      ocdid_prefix: "ocd-division/country:us/state:al/sldl:"
+      click_tag: their-sldl
+      no_rep_note: state House of Representatives
+      rep_note: no
+      prelude: Your state representative is
+
+    - ocdid: theirs
+      ocdid_prefix: "ocd-division/country:us/state:al/sldu:"
+      click_tag: their-sldu
+      no_rep_note: state Senate
+      rep_note: no
+      prelude: Your state senator is
+
+
+hb23:
+  name: "House Bill 23 (Don't Say Gay)"
+  sentence_name: HB23
+  members_file: data/alabama/2026.csv
+  notes:
+    house-edpol: |
+      <strong>
+
+  tips: |
+    <h2>Talking points and tips</h2>
+
+    <p><strong>House Bill 23</strong> would expand the current prohibition
+    on discussing queer topics in schools so that it would now restrict
+    pre-kindergarten all the way through grade 12. It would also ban Pride
+    insignias in public schools, and it makes the misgendering of trans kids
+    a <em>legal requirement</em> with which school employees must
+    comply.</p>
+
+    <ul class="incremental">
+        <li>Please call <strong>your state House rep</strong> and tell them
+            that you oppose House Bill 23. Call <strong>your state Senator</strong> and tell them that too, if you have time.</li>
+        <li>At this stage, and generally when talking to Republican legislators,
+            it will be more effective to talk about how the legislature has more
+            important priorities, and that the bill is poorly written, has
+            unintended consequences, and may drive business away from the state —
+            rather than directly talking about the impacts on queer people.
+            See the talking points below for some ideas.</li>
+        <li>Don’t be discouraged if you reach voicemail — leave a message. Every
+            call counts.</li>
+        <li>It may be difficult, but be direct and polite. If it helps, you can
+            write down what you want to say beforehand.</li>
+    </ul>
+    <p>If you already know what the bill is about and what you want to talk
+        about, <a id="reps">skip these tips</a>. Otherwise, <strong>skim
+            these bullet points, pick a few that resonate with you, and be prepared
+            to expand on them if necessary.</strong></p>
+
+    <ul><li>In Equality Florida v. DeSantis (2022), Florida was forced to gut their "Don't Say Gay" law, which was comparable to this bill. As well, similar bills have already been ruled unconstitutional in other states, including Tennessee and Texas. <strong>Why should Alabama waste its resources and taxpayer dollars just to become the next state where a "Don't Say Gay" law is struck down?</strong></li>
+    <li><strong>What effect would this bill have on textbooks, materials,
+    etc?</strong> Do schools need to throw out textbooks that contain even
+    the slightest mention of sexual orientation or gender identity?<br />
+    </li>
+    <li>The bill is so vague that it prevents discussion about even
+    heterosexual relationships – <strong>a female teacher who mentions her
+    husband in the classroom would be breaking the law, if this bill were to
+    pass</strong>.
+    <ul>
+    <li>There’s no need to subject our teachers to this kind of excessive
+    scrutiny – we should let our teachers spend their time teaching
+    instead.<br />
+    </li>
+    </ul></li>
+    <li><strong>The bill will harm the state’s health education
+    programs.</strong>
+    <ul>
+    <li>The bill’s vague wording disallows discussion of even heterosexual
+    relationships, which would be detrimental to sex education.
+    <ul>
+    <li>Alabama has the fifth highest rate of teen pregnancy in the nation,
+    and the sixth highest rate of sexually transmitted diseases.<br />
+    </li>
+    </ul></li>
+    <li>The bill’s moratorium on discussion of gender would disallow the
+    gendering of reproductive health topics like menstruation — teachers
+    would have to say “people who menstruate” to avoid mentioning gender
+    identity.<br />
+    </li>
+    <li>We should be acting to educate children on these topics in a
+    developmentally appropriate way, rather than banning discussion
+    altogether as this bill does.<br />
+    </li>
+    </ul></li>
+    <li><strong>This bill takes authority away from teachers to discipline
+    students for bullying.</strong>
+    <ul>
+    <li>Under this law, teachers cannot discipline students who harass
+    others for being gay or trans. This would further contribute to a school
+    culture in Alabama where some kids are not welcome based on who they
+    are.<br />
+    </li>
+    </ul></li>
+    <li><strong>It sets the state up for litigation based on employment
+    discrimination.</strong>
+    <ul>
+    <li>The legal implications of HB244 discourage schools from hiring
+    teachers who are gay or trans.<br />
+    </li>
+    </ul></li>
+
+        <li><strong>This bill holds charter schools that receive public funding
+            to a different standard.</strong>
+            <ul>
+                <li>Why should charter schools be excluded from this legislation? If
+                    this bill is truly a priority, it ought to be a priority across the
+                    educational landscape.</li>
+            </ul></li>
+
+    </ul>
+
+    <ul>
+    </ul>
+
+    <a id="reps">
+
+  reps:
+    - ocdid: theirs
+      ocdid_prefix: "ocd-division/country:us/state:al/sldl:"
+      click_tag: their-sldl
+      no_rep_note: state House of Representatives
+      rep_note: yes
+      prelude: Your state representative is
+
+    - ocdid: theirs
+      ocdid_prefix: "ocd-division/country:us/state:al/sldu:"
+      click_tag: their-sldu
+      no_rep_note: state Senate
+      rep_note: no
+      prelude: Your state senator is
+
