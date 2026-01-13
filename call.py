@@ -142,6 +142,15 @@ def do_call(c="contact"):
     )
 
 
+@app.route("/write/<c>/")
+def do_write(c):
+    default_url = f"https://actionnetwork.org/letters/altrac-{c}-2026"
+    if c not in campaigns:
+        return redirect(default_url)
+
+    return redirect(campaigns[c].get("write_url", default_url))
+
+
 @app.route("/call/not_found/")
 def not_found():
     return render_template("not_found.html")
