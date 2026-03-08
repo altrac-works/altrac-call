@@ -22,8 +22,8 @@ contact:
 
 
 hb23:
-  name: "House Bill 23 (Don't Say Gay)"
-  sentence_name: HB23
+  name: "House Bill 23 / Senate Bill 331 (Don't Say Gay)"
+  sentence_name: HB23/SB331
   members_file: data/alabama/2026.csv
   write_url: https://actionnetwork.org/letters/altrac-hb23-2026/
   notes:
@@ -32,15 +32,13 @@ hb23:
 
   tips: |
     <h2 id="talking-points-and-tips">Talking points and tips</h2>
-    <p><strong>House Bill 23</strong> would expand the current prohibition
+    <p><strong>House Bill 23 and Senate Bill 331</strong> would expand the current prohibition
     on discussing queer topics in schools so that it would now restrict
-    pre-kindergarten all the way through grade 12. It would also ban Pride
+    pre-kindergarten all the way through grade 12. These bills would also ban Pride
     insignias in public school classrooms.</p>
     <ul>
-    <li>Please call <strong>your rep in the House</strong> and tell them
-    that you oppose HB23. Call your own senator too, if you have time,
-    although be mindful that the bill has not been introduced in the Senate
-    yet.<br />
+    <li>Please call <strong>your state Senator</strong> and tell them
+    that you oppose HB23/SB331. Call your rep in the house too, if you have time.<br />
     </li>
     <li>At this stage, and generally when talking to Republican legislators,
     it will be more effective to talk about how the legislature has more
@@ -117,7 +115,7 @@ hb23:
     <li><strong>It sets the state up for litigation based on employment
     discrimination.</strong>
     <ul>
-    <li>The legal implications HB23 has for schools would discourage them
+    <li>The legal implications these bills have for schools would discourage them
     from hiring teachers who are gay or transgender.<br />
     </li>
     </ul></li>
@@ -183,16 +181,19 @@ hb23:
 
   reps:
     - ocdid: theirs
-      ocdid_prefix: "ocd-division/country:us/state:al/sldl:"
-      click_tag: their-sldl
-      no_rep_note: state House of Representatives
-      rep_note: yes
-      prelude: Your state representative is
-
-    - ocdid: theirs
       ocdid_prefix: "ocd-division/country:us/state:al/sldu:"
       click_tag: their-sldu
       no_rep_note: state Senate
       rep_note: no
       prelude: Your state senator is
 
+    - ocdid: theirs
+      ocdid_prefix: "ocd-division/country:us/state:al/sldl:"
+      click_tag: their-sldl
+      no_rep_note: state House of Representatives
+      rep_note: yes
+      prelude: Your state representative is
+
+sb331:
+  redirect: hb23
+  write_url: https://actionnetwork.org/letters/altrac-hb23-2026/
